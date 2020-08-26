@@ -78,7 +78,6 @@
 
     <modules>
         <module>bom</module>
-
         <module>integration-tests</module>
     </modules>
 
