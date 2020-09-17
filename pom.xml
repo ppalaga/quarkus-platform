@@ -185,12 +185,12 @@
                                             <versionPlaceholder>@{camel-quarkus.version}</versionPlaceholder>
                                         </testJarXml>
                                     </testJarXmls>
-                                    <testModulesParentDir>integration-tests/camel</testModulesParentDir>
+                                    <testModulesParentDir>integration-tests/camel/invoked/root</testModulesParentDir>
                                     <testModuleArtifactIdReplacers>/^camel-quarkus-integration-test-(.*)$/quarkus-universe-integration-tests-camel-$1/</testModuleArtifactIdReplacers>
                                     <testModuleDirReplacers>/^camel-quarkus-integration-test-(.*)$/camel-$1/</testModuleDirReplacers>
-                                    <rpkgModulePomXmlPath>integration-tests/camel/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <rpkgModulePomXmlPath>integration-tests/camel/invoked/root/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
-                                    <templatesUriBase>file:src/rpkg-templates</templatesUriBase>
+                                    <templatesUriBase>file:src/camel-rpkg-templates</templatesUriBase>
                                     <cleanExcludes>
                                         <cleanExclude>pom.xml</cleanExclude>
                                         <cleanExclude>camel-timer-devmode/**</cleanExclude>

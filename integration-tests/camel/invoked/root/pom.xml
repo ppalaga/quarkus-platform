@@ -92,6 +92,7 @@
         <module>camel-mock</module>
         <module>camel-mongodb</module>
         <module>camel-mustache</module>
+        <module>camel-nats</module>
         <module>camel-netty</module>
         <module>camel-olingo4</module>
         <module>camel-openapi-java</module>
