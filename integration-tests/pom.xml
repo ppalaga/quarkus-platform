@@ -83,7 +83,7 @@
                         <projectsDirectory>invoked</projectsDirectory>
                         <streamLogs>true</streamLogs>
                         <suppressSummaries>true</suppressSummaries>
-                        <goals>clean install -e</goals>
+                        <goals>${invoker.goals}</goals>
                     </configuration>
                     <executions>
                         <execution>

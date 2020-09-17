@@ -74,6 +74,12 @@
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
+
+        <!-- To run native tests, use
+
+             mvn clean verify -Dinvoker.goals="clean verify -e -Dnative"
+        -->
+        <invoker.goals>clean verify -e</invoker.goals>
     </properties>
 
     <modules>
