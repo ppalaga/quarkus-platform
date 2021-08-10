@@ -518,7 +518,72 @@
                 <quarkus-bom.version>${quarkus.upstream.version}-redhat-00001</quarkus-bom.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
                 <platform.version>${project.version}-redhat-00001</platform.version>
+                <camel-quarkus.version>2.1.0.fuse-800001-redhat-00001</camel-quarkus.version>
             </properties>
+
+
+            <repositories>
+                <repository>
+                  <id>fuse-all</id>
+                  <releases>
+                    <enabled>true</enabled>
+                    <updatePolicy>never</updatePolicy>
+                    <checksumPolicy>warn</checksumPolicy>
+                  </releases>
+                  <snapshots>
+                    <enabled>false</enabled>
+                    <updatePolicy>never</updatePolicy>
+                    <checksumPolicy>fail</checksumPolicy>
+                  </snapshots>
+                  <url>http://nexus.fuse-qe.eng.rdu2.redhat.com/repository/fuse-all/</url>
+                  <layout>default</layout>
+                </repository>
+
+                <repository>
+                    <id>indy</id>
+                    <url>http://indy.psi.redhat.com/api/content/maven/group/static/</url>
+                    <name>Apache Snapshot Repo</name>
+                    <snapshots>
+                        <enabled>false</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                  <id>fuse-all</id>
+                  <releases>
+                    <enabled>true</enabled>
+                    <updatePolicy>never</updatePolicy>
+                    <checksumPolicy>warn</checksumPolicy>
+                  </releases>
+                  <snapshots>
+                    <enabled>false</enabled>
+                    <updatePolicy>never</updatePolicy>
+                    <checksumPolicy>fail</checksumPolicy>
+                  </snapshots>
+                  <url>http://nexus.fuse-qe.eng.rdu2.redhat.com/repository/fuse-all/</url>
+                  <layout>default</layout>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>indy</id>
+                    <url>http://indy.psi.redhat.com/browse/maven/group/static/</url>
+                    <name>Apache Snapshot Repo</name>
+                    <snapshots>
+                        <enabled>false</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+
             <build>
                 <plugins>
                     <plugin>
@@ -552,11 +617,9 @@
                                     <member>
                                         <name>Camel</name>
                                         <hidden>true</hidden>
-                                        <!-- uncomment when the artifact is available
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        -->
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>
