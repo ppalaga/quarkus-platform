@@ -24,7 +24,7 @@
             </goals>
             <configuration>
               <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.1.0.Final</originalPluginCoords>
-              <targetPluginCoords>io.quarkus.platform:quarkus-maven-plugin:999-SNAPSHOT</targetPluginCoords>
+              <targetPluginCoords>com.redhat.quarkus.platform:quarkus-maven-plugin:999-SNAPSHOT-redhat-00001</targetPluginCoords>
             </configuration>
           </execution>
         </executions>

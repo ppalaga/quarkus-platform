@@ -2,9 +2,9 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.quarkus.platform</groupId>
+  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-kogito-bom</artifactId>
-  <version>999-SNAPSHOT</version>
+  <version>999-SNAPSHOT-redhat-00001</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Kogito - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -43,19 +43,22 @@
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-kogito-bom-quarkus-platform-descriptor</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>999-SNAPSHOT-redhat-00001</version>
         <type>json</type>
-        <classifier>999-SNAPSHOT</classifier>
+        <classifier>999-SNAPSHOT-redhat-00001</classifier>
       </dependency>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-kogito-bom-quarkus-platform-properties</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>999-SNAPSHOT-redhat-00001</version>
         <type>properties</type>
       </dependency>
       <dependency>
@@ -1549,6 +1552,30 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-install</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-deploy</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
   <profiles>
     <profile>
       <id>release</id>

@@ -26,8 +26,8 @@
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
-    <platform.key>io.quarkus.platform</platform.key>
-    <platform.release>999-SNAPSHOT</platform.release>
+    <platform.key>com.redhat.quarkus.platform</platform.key>
+    <platform.release>999-SNAPSHOT-redhat-00001</platform.release>
     <platform.stream>999-SNAPSHOT</platform.stream>
   </properties>
   <build>

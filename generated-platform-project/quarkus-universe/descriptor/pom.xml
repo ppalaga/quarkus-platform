@@ -52,7 +52,8 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-universe-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>2.1.0.Final-redhat-00001</quarkusCoreVersion>
+          <upstreamQuarkusCoreVersion>2.1.0.Final</upstreamQuarkusCoreVersion>
           <platformRelease>
             <platformKey>${project.groupId}</platformKey>
             <stream>${platform.stream}</stream>
@@ -61,7 +62,10 @@
               <member>${project.groupId}:quarkus-universe-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
-          <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
+          <metadataOverrideArtifacts>
+            <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:2.1.0.fuse-800001-redhat-00001</artifact>
+          </metadataOverrideArtifacts>
+          <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json,${project.basedir}/../../../src/main/resources/core/extensions-support-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
       </plugin>
