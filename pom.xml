@@ -46,6 +46,7 @@
     </issueManagement>
 
     <properties>
+        <quarkus.registry.url>http://localhost:8080/registry/new-platform</quarkus.registry.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
@@ -175,7 +176,7 @@
                             <!-- coordinates of the generated all-inclusive platform BOM -->
                             <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
                             <!-- whether to skip installation of the all-inclusive platform BOM -->
-                            <skipInstall>false</skipInstall>
+                            <skipInstall>true</skipInstall>
                         </universal>
                         <!-- Quarkus core -->
                         <core>
