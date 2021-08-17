@@ -617,7 +617,7 @@
                                     </member>
                                     <member>
                                         <name>Camel</name>
-                                        <hidden>true</hidden>
+                                        <hidden>false</hidden>
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
