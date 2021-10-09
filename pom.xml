@@ -464,6 +464,7 @@
                                 <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
                                 <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
                                 <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
+                                <dependency>com.google.guava:guava-testlib</dependency>
 
                             </excludedDependencies>
                         </bomGenerator>
