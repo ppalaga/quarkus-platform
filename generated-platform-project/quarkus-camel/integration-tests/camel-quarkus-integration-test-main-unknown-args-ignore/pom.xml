@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
-    <version>2.2.3.Final</version>
+    <version>2.2.3.Final-redhat-00013</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-main-unknown-args-ignore</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>${camel-quarkus-community.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>${camel-quarkus-community.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -38,7 +35,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-tests-process-executor-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>${camel-quarkus-community.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -137,7 +134,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>${quarkus-bom.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -145,7 +142,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

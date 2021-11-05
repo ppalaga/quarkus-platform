@@ -552,6 +552,10 @@
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
+
+                <camel-quarkus.version>2.2.0.fuse-800021-redhat-00001</camel-quarkus.version>
+                <camel-quarkus-community.version>2.2.0</camel-quarkus-community.version>
+
             </properties>
             <build>
                 <plugins>
@@ -588,12 +592,11 @@
                                     </member>
                                     <member>
                                         <name>Camel</name>
-                                        <hidden>true</hidden>
-                                        <!-- uncomment when the artifact is available
+                                        <hidden>false</hidden>
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        -->
+                                        <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-community.version}</testCatalogArtifact>
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>
