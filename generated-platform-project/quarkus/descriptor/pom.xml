@@ -64,6 +64,9 @@
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
+          <processGroupIds>
+            <groupId>io.quarkus</groupId>
+          </processGroupIds>
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json,${project.basedir}/../../../src/main/resources/core/extensions-support-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
