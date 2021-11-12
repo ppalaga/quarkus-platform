@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>2.2.3.Final-redhat-00013</version>
+    <version>2.2.3.Camel-temporary-redhat-00004</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -55,6 +55,7 @@
         <quarkus-bom.version>2.2.3.Final-redhat-00013</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
+        <camel-quarkus-tests.version>${camel-quarkus.version}</camel-quarkus-tests.version>
 
         <quarkus-qpid-jms.version>0.27.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -318,6 +319,7 @@
                                 <name>Camel</name>
                                 <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                 <enabled>true</enabled>
+                                <alignOwnConstraints>true</alignOwnConstraints>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.2.2.Final</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
@@ -334,11 +336,11 @@
                                     </nativeSystemProperties>
                                     <transformWith>src/main/resources/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
-                                <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
+                                <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-tests.version}</testCatalogArtifact>
                                 <tests>
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus-tests.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
@@ -444,10 +446,13 @@
                         <!-- Platform BOM generator configuration -->
                         <bomGenerator>
                             <!-- Config to enforce specific versions and excluding dependencies -->
-                            <!--
                             <enforcedDependencies>
-                                <dependency>groupId:artifactId:desired-version</dependency>
+                                <!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1379 -->
+                                <dependency>com.azure:azure-storage-blob-batch:12.9.1</dependency>
+                                <dependency>com.azure:azure-storage-file-share:12.9.1</dependency>
+                                <dependency>com.azure:azure-storage-queue:12.9.1</dependency>
                             </enforcedDependencies>
+                            <!--
                             <excludedDependencies>
                                 <dependency>groupId:artifactId</dependency>
                             </excludedDependencies>
@@ -552,6 +557,10 @@
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
+
+                <camel-quarkus.version>2.2.0.fuse-800021-redhat-00001</camel-quarkus.version>
+                <camel-quarkus-community.version>2.2.0</camel-quarkus-community.version>
+                <camel-quarkus-tests.version>${camel-quarkus-community.version}</camel-quarkus-tests.version>
             </properties>
             <build>
                 <plugins>
@@ -588,12 +597,10 @@
                                     </member>
                                     <member>
                                         <name>Camel</name>
-                                        <hidden>true</hidden>
-                                        <!-- uncomment when the artifact is available
+                                        <hidden>false</hidden>
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        -->
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>
