@@ -49,8 +49,6 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="/pom:project/pom:dependencies/pom:dependency/pom:version/text()[.='${camel-quarkus.version}']">&#36;{camel-quarkus-tests.version}</xsl:template>
-
     <xsl:template match="/pom:project/pom:build/pom:plugins">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" />
