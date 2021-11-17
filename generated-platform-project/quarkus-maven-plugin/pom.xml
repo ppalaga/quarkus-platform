@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>2.2.3.Final-redhat-00013</version>
+    <version>2.2.3.Camel-temporary-redhat-00004</version>
     <relativePath>..</relativePath>
   </parent>
   <groupId>com.redhat.quarkus.platform</groupId>
@@ -17,7 +17,7 @@
       <dependency>
         <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>2.2.3.Final-redhat-00013</version>
+        <version>2.2.3.Camel-temporary-redhat-00004</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -36,7 +36,7 @@
             </goals>
             <configuration>
               <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.2.3.Final</originalPluginCoords>
-              <targetPluginCoords>com.redhat.quarkus.platform:quarkus-maven-plugin:2.2.3.Final-redhat-00013</targetPluginCoords>
+              <targetPluginCoords>com.redhat.quarkus.platform:quarkus-maven-plugin:2.2.3.Camel-temporary-redhat-00004</targetPluginCoords>
             </configuration>
           </execution>
         </executions>

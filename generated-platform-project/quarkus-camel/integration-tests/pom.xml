@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-parent</artifactId>
-    <version>2.2.3.Final-redhat-00013</version>
+    <version>2.2.3.Camel-temporary-redhat-00004</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-camel-integration-tests-parent</artifactId>
@@ -193,7 +193,7 @@
       <dependency>
         <groupId>com.redhat.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
-        <version>2.2.3.Final-redhat-00013</version>
+        <version>2.2.3.Camel-temporary-redhat-00004</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

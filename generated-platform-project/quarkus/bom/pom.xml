@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-bom</artifactId>
-  <version>2.2.3.Final-redhat-00013</version>
+  <version>2.2.3.Camel-temporary-redhat-00004</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Core - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -49,14 +49,14 @@
       <dependency>
         <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-bom-quarkus-platform-descriptor</artifactId>
-        <version>2.2.3.Final-redhat-00013</version>
+        <version>2.2.3.Camel-temporary-redhat-00004</version>
         <type>json</type>
-        <classifier>2.2.3.Final-redhat-00013</classifier>
+        <classifier>2.2.3.Camel-temporary-redhat-00004</classifier>
       </dependency>
       <dependency>
         <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-bom-quarkus-platform-properties</artifactId>
-        <version>2.2.3.Final-redhat-00013</version>
+        <version>2.2.3.Camel-temporary-redhat-00004</version>
         <type>properties</type>
       </dependency>
       <dependency>
@@ -70,12 +70,12 @@
         <version>2.40.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>ask-sdk-model-runtime</artifactId>
             <groupId>com.amazon.alexa</groupId>
+            <artifactId>ask-sdk-model-runtime</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -85,20 +85,20 @@
         <version>2.40.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>log4j-slf4j-impl</artifactId>
             <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>joda-time</artifactId>
             <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>ask-sdk-apache-client</artifactId>
             <groupId>com.amazon.alexa</groupId>
+            <artifactId>ask-sdk-apache-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -108,16 +108,16 @@
         <version>1.6</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.ws.rs-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -137,12 +137,12 @@
         <version>2.9.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>joda-time</artifactId>
             <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -470,8 +470,8 @@
         <version>2.9.2.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -536,16 +536,16 @@
         <version>0.17.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -560,8 +560,8 @@
         <version>2.2.0.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>animal-sniffer-annotations</artifactId>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -571,8 +571,8 @@
         <version>30.1.1.jre-redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>j2objc-annotations</artifactId>
             <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1503,12 +1503,12 @@
         <version>1.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2123,8 +2123,8 @@
         <version>4.1.1.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2134,8 +2134,8 @@
         <version>4.1.1.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-all</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2145,8 +2145,8 @@
         <version>4.1.1.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2156,8 +2156,8 @@
         <version>4.1.1.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2212,12 +2212,12 @@
         <version>1.1.4.Final-redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>cdi-api</artifactId>
             <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2895,8 +2895,8 @@
         <version>2.2.3.Final-redhat-00013</version>
         <exclusions>
           <exclusion>
-            <artifactId>annotations</artifactId>
             <groupId>com.google.android</groupId>
+            <artifactId>annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3031,8 +3031,8 @@
         <version>2.2.3.Final-redhat-00013</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4249,8 +4249,8 @@
         <version>2.2.3.Final-redhat-00013</version>
         <exclusions>
           <exclusion>
-            <artifactId>shrinkwrap-api</artifactId>
             <groupId>org.jboss.shrinkwrap</groupId>
+            <artifactId>shrinkwrap-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4265,8 +4265,8 @@
         <version>2.2.3.Final-redhat-00013</version>
         <exclusions>
           <exclusion>
-            <artifactId>shrinkwrap-api</artifactId>
             <groupId>org.jboss.shrinkwrap</groupId>
+            <artifactId>shrinkwrap-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4718,20 +4718,20 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4741,20 +4741,20 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4764,24 +4764,24 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jakarta.activation-api</artifactId>
             <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4861,12 +4861,12 @@
         <version>2.4.4.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>asm</artifactId>
             <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5016,12 +5016,12 @@
         <version>2.13.0.redhat-00009</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-databind</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5256,12 +5256,12 @@
         <version>3.9.1.redhat-00009</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5286,28 +5286,28 @@
         <version>3.9.1.redhat-00009</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>scala-reflect</artifactId>
             <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>kafka-clients</artifactId>
             <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>zkclient</artifactId>
             <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>log4j</artifactId>
             <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5392,8 +5392,8 @@
         <version>1.3.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5443,20 +5443,20 @@
         <version>3.2.1.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logging</artifactId>
             <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javaee-api</artifactId>
             <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>smallrye-jwt-build</artifactId>
             <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-jwt-build</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5471,12 +5471,12 @@
         <version>3.0.1.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>javaee-api</artifactId>
             <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5486,8 +5486,8 @@
         <version>2.1.10.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5497,8 +5497,8 @@
         <version>2.1.10.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5508,8 +5508,8 @@
         <version>2.1.10.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5524,8 +5524,8 @@
         <version>2.1.10.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5535,8 +5535,8 @@
         <version>2.0.1.redhat-00008</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-config-api</artifactId>
             <groupId>org.eclipse.microprofile.config</groupId>
+            <artifactId>microprofile-config-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5846,28 +5846,28 @@
         <version>4.1.3.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jackson-module-scala_2.12</artifactId>
             <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-scala_2.12</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>scala-reflect</artifactId>
             <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>kafka-clients</artifactId>
             <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>zkclient</artifactId>
             <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6383,8 +6383,8 @@
         <version>1.2.5.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.ejb-api</artifactId>
             <groupId>jakarta.ejb</groupId>
+            <artifactId>jakarta.ejb-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6449,8 +6449,8 @@
         <version>8.0.26.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>protobuf-java</artifactId>
             <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6485,16 +6485,16 @@
         <version>2.17.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>geronimo-json_1.0_spec</artifactId>
             <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-json_1.0_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>johnzon-core</artifactId>
             <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6504,16 +6504,16 @@
         <version>2.17.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>geronimo-json_1.0_spec</artifactId>
             <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-json_1.0_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>johnzon-core</artifactId>
             <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6528,8 +6528,8 @@
         <version>2.17.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6619,8 +6619,8 @@
         <version>2.8.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6630,8 +6630,8 @@
         <version>3.6.0.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>maven-artifact</artifactId>
             <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6641,8 +6641,8 @@
         <version>1.6.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6652,8 +6652,8 @@
         <version>1.6.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6663,24 +6663,24 @@
         <version>0.10.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>plexus-classworlds</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-classworlds</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-codec</artifactId>
             <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>maven-shared-utils</artifactId>
             <groupId>org.apache.maven.shared</groupId>
+            <artifactId>maven-shared-utils</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.apache.maven</groupId>
             <artifactId>maven-model</artifactId>
-            <groupId>org.apache.maven</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>maven-artifact</artifactId>
             <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6700,8 +6700,8 @@
         <version>3.4.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6711,16 +6711,16 @@
         <version>3.4.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-io</artifactId>
             <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6730,12 +6730,12 @@
         <version>3.8.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6745,32 +6745,32 @@
         <version>3.8.1</version>
         <exclusions>
           <exclusion>
+            <groupId>org.sonatype.plexus</groupId>
             <artifactId>plexus-sec-dispatcher</artifactId>
-            <groupId>org.sonatype.plexus</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.sonatype.plexus</groupId>
             <artifactId>plexus-cipher</artifactId>
-            <groupId>org.sonatype.plexus</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr250-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>cdi-api</artifactId>
             <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6785,12 +6785,12 @@
         <version>3.8.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>cdi-api</artifactId>
             <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6800,12 +6800,12 @@
         <version>3.8.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6815,12 +6815,12 @@
         <version>3.8.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6835,8 +6835,8 @@
         <version>3.0-alpha-2</version>
         <exclusions>
           <exclusion>
-            <artifactId>plexus-classworlds</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-classworlds</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6856,24 +6856,24 @@
         <version>1.27</version>
         <exclusions>
           <exclusion>
-            <artifactId>cxf-rt-rs-client</artifactId>
             <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-client</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation-api</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-api</artifactId>
             <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6928,8 +6928,8 @@
         <version>2.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6964,8 +6964,8 @@
         <version>2.0.0.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6980,8 +6980,8 @@
         <version>1.2.0.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6991,8 +6991,8 @@
         <version>3.0.0.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7002,8 +7002,8 @@
         <version>2.0.0.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7013,8 +7013,8 @@
         <version>1.0.1.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7039,8 +7039,8 @@
         <version>0.3.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7050,8 +7050,8 @@
         <version>1.0.9.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7071,8 +7071,8 @@
         <version>7.10.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>log4j-api</artifactId>
             <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7103,8 +7103,8 @@
         <scope>provided</scope>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7119,8 +7119,8 @@
         <version>6.8.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7145,8 +7145,8 @@
         <version>6.0.6.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>hibernate-commons-annotations</artifactId>
             <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7309,16 +7309,16 @@
         <version>1.0.9.redhat-00002</version>
         <exclusions>
           <exclusion>
-            <artifactId>svm</artifactId>
             <groupId>org.graalvm.nativeimage</groupId>
+            <artifactId>svm</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jboss-modules</artifactId>
             <groupId>org.jboss.modules</groupId>
+            <artifactId>jboss-modules</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.json</artifactId>
             <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7328,8 +7328,8 @@
         <version>1.2.2.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7339,8 +7339,8 @@
         <version>1.0.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7350,8 +7350,8 @@
         <version>11.0.0.Final-redhat-1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logging</artifactId>
             <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7376,8 +7376,8 @@
         <version>5.12.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
             <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7392,8 +7392,8 @@
         <version>5.12.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7403,16 +7403,16 @@
         <version>5.12.0.Final</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.narayana.rts</groupId>
             <artifactId>narayana-lra</artifactId>
-            <groupId>org.jboss.narayana.rts</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.jboss.narayana.rts</groupId>
             <artifactId>lra-service-base</artifactId>
-            <groupId>org.jboss.narayana.rts</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7457,8 +7457,8 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-config-api</artifactId>
             <groupId>org.eclipse.microprofile.config</groupId>
+            <artifactId>microprofile-config-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7488,12 +7488,12 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7503,12 +7503,12 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7558,8 +7558,8 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7569,8 +7569,8 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7580,16 +7580,16 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>hibernate-jpa-2.1-api</artifactId>
             <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7614,8 +7614,8 @@
         <version>4.7.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>resteasy-context-propagation</artifactId>
             <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-context-propagation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7630,12 +7630,12 @@
         <version>4.7.0.Final-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7851,8 +7851,8 @@
         <version>14.0.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7872,12 +7872,12 @@
         <version>4.3.5</version>
         <exclusions>
           <exclusion>
-            <artifactId>logback-classic</artifactId>
             <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-api</artifactId>
             <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7967,8 +7967,8 @@
         <version>42.2.23.redhat-00001</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7983,8 +7983,8 @@
         <version>1.0.3.redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8364,8 +8364,8 @@
         <version>2.17.20</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
