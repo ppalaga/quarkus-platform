@@ -59,6 +59,7 @@
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
+        <camel-quarkus-tests.version>${camel-quarkus.version}</camel-quarkus-tests.version>
 
         <quarkus-qpid-jms.version>0.27.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -73,6 +74,7 @@
 
         <quarkus-platform-bom-generator.version>0.0.45</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
+        <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -321,6 +323,7 @@
                                 <name>Camel</name>
                                 <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                 <enabled>true</enabled>
+                                <alignOwnConstraints>true</alignOwnConstraints>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.2.5.Final</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
@@ -337,11 +340,11 @@
                                     </nativeSystemProperties>
                                     <transformWith>src/main/resources/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
-                                <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
+                                <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-tests.version}</testCatalogArtifact>
                                 <tests>
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus-tests.version}</artifact>
                                     </test>
                                     <test><!-- New York has been changed to New York City -->
                                         <skip>true</skip>
@@ -455,10 +458,13 @@
                         <!-- Platform BOM generator configuration -->
                         <bomGenerator>
                             <!-- Config to enforce specific versions and excluding dependencies -->
-                            <!--
                             <enforcedDependencies>
-                                <dependency>groupId:artifactId:desired-version</dependency>
+                                <!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1379 -->
+                                <dependency>com.azure:azure-storage-blob-batch:12.9.1</dependency>
+                                <dependency>com.azure:azure-storage-file-share:12.9.1</dependency>
+                                <dependency>com.azure:azure-storage-queue:12.9.1</dependency>
                             </enforcedDependencies>
+                            <!--
                             <excludedDependencies>
                                 <dependency>groupId:artifactId</dependency>
                             </excludedDependencies>
@@ -499,6 +505,7 @@
                                 <dependency>org.kie.kogito:kogito-spring-boot-starter:*</dependency>
                                 <dependency>org.kie.kogito:kogito-spring-boot-test-utils:*</dependency>
                                 <dependency>org.kie.kogito:kogito-springboot-starter:*</dependency>
+                                <dependency>com.google.guava:guava-testlib</dependency>
                                 <dependency>org.kie.kogito:monitoring-core-springboot-addon:*</dependency>
                                 <dependency>org.kie.kogito:monitoring-prometheus-springboot-addon:*</dependency>
                             </excludedDependencies>
@@ -591,6 +598,9 @@
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
+                <camel-quarkus.version>2.2.0.fuse-800021-redhat-00004</camel-quarkus.version>
+                <camel-quarkus-community.version>2.2.0</camel-quarkus-community.version>
+                <camel-quarkus-tests.version>${camel-quarkus-community.version}</camel-quarkus-tests.version>
             </properties>
             <build>
                 <plugins>
@@ -604,6 +614,23 @@
                                     <bom>com.redhat.quarkus:quarkus-universe-bom:${platform.version}</bom>
                                 </universal>
                                 <core combine.children="append">
+                                    <!-- extra constraints to be added to the generated quarkus-bom -->
+                                    <dependencyManagement>
+                                        <dependency>com.google.code.findbugs:jsr305:3.0.2.redhat-00008</dependency> <!-- missing from the quarkus-bom in 2.2 -->
+                                        <dependency>org.xerial.snappy:snappy-java:1.1.8.4-redhat-00002</dependency> <!-- Remove once https://github.com/quarkusio/quarkus/pull/21811 is available in Quarkus core version we depend on -->
+                                        <!-- Kafka connect-* constraints to align with Camel, workaround for https://issues.redhat.com/browse/QUARKUS-1604 and https://issues.redhat.com/browse/QUARKUS-1499 -->
+                                        <dependency>org.apache.kafka:connect-api:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:connect-file:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:connect-json:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:connect-runtime:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:connect-transforms:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:kafka-clients:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:kafka-log4j-appender:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:kafka-streams:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:kafka-streams-test-utils:2.8.0.redhat-00005</dependency>
+                                        <dependency>org.apache.kafka:kafka-tools:2.8.0.redhat-00005</dependency>
+                                    </dependencyManagement>
+                                    <!-- Red Hat support metadata -->
                                     <metadataOverrideFiles>
                                         <file>${resourcesdir}/core/extensions-support-overrides.json</file>
                                     </metadataOverrideFiles>
@@ -627,12 +654,23 @@
                                     </member>
                                     <member>
                                         <name>Camel</name>
-                                        <hidden>true</hidden>
-                                        <!-- uncomment when the artifact is available
+                                        <hidden>false</hidden>
+                                        <dependencyManagement>
+                                            <dependency>com.atlassian.jira:jira-rest-java-client-api:5.2.2.redhat-00003</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/QUARKUS-1508 -->
+                                            <dependency>com.atlassian.jira:jira-rest-java-client-core:5.2.2.redhat-00003</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/QUARKUS-1508 -->
+                                            <dependency>org.antlr:antlr-runtime:3.5.2</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17951 -->
+                                            <dependency>org.antlr:antlr:3.5.2</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17951 -->
+                                            <dependencySpec><!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17960 -->
+                                                <artifact>org.apache.camel:camel-debezium-mongodb:3.11.1</artifact>
+                                                <exclusions>
+                                                    <exclusion>org.apache.maven:maven-artifact</exclusion>
+                                                </exclusions>
+                                            </dependencySpec>
+                                        </dependencyManagement>
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        -->
+                                        <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-community.version}</testCatalogArtifact>
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>

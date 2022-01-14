@@ -49,6 +49,8 @@
         </xsl:copy>
     </xsl:template>
 
+    <xsl:template match="/pom:project/pom:dependencies/pom:dependency/pom:version/text()[.='${camel-quarkus.version}']">&#36;{camel-quarkus-tests.version}</xsl:template>
+
     <xsl:template match="/pom:project/pom:build/pom:plugins">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" />
@@ -77,12 +79,12 @@
                         <dependency>
                             <groupId>org.apache.camel.quarkus</groupId>
                             <artifactId>camel-quarkus-integration-test-support</artifactId>
-                            <version>${camel-quarkus.version}</version>
+                            <version>&#36;{camel-quarkus-tests.version}</version>
                         </dependency>
                         <dependency>
                             <groupId>org.apache.camel.quarkus</groupId>
                             <artifactId>camel-quarkus-integration-test-solr</artifactId>
-                            <version>${camel-quarkus.version}</version>
+                            <version>&#36;{camel-quarkus-tests.version}</version>
                             <classifier>tests</classifier>
                         </dependency>
                     </dependencies>
