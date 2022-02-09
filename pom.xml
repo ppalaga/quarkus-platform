@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>2.2.5.Final-redhat-00006</version>
+    <version>2.2.5.Final-redhat-00007</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -56,7 +56,7 @@
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
         <quarkus.version>2.2.5.Final</quarkus.version>
-        <quarkus-bom.version>2.2.5.Final-redhat-00009</quarkus-bom.version>
+        <quarkus-bom.version>2.2.5.Final-redhat-00010</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
         <camel-quarkus-tests.version>${camel-quarkus.version}</camel-quarkus-tests.version>
