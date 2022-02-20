@@ -3,9 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-parent</artifactId>
+<<<<<<< HEAD
     <version>2.7.5.Final</version>
+=======
+    <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-camel-integration-tests-parent</artifactId>
@@ -65,7 +69,11 @@
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-ftp</module>
+<<<<<<< HEAD
     <module>camel-quarkus-integration-test-geocoder</module>
+=======
+    <module>camel-quarkus-integration-test-geocoder-2.2.0</module>
+>>>>>>> 3e34b876e... Regenerate BOMs
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
@@ -91,7 +99,11 @@
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
+<<<<<<< HEAD
     <module>camel-quarkus-integration-test-js-dsl</module>
+=======
+    <module>camel-quarkus-integration-test-js-dsl-2.2.0</module>
+>>>>>>> 3e34b876e... Regenerate BOMs
     <module>camel-quarkus-integration-test-jsch</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
@@ -193,21 +205,25 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus</groupId>
+        <groupId>com.redhat.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
+<<<<<<< HEAD
         <version>2.7.5.Final</version>
+=======
+        <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>${quarkus-bom.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>${quarkus-bom.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

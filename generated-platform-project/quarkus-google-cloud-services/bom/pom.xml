@@ -2,9 +2,13 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.quarkus.platform</groupId>
+  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-google-cloud-services-bom</artifactId>
+<<<<<<< HEAD
   <version>2.7.5.Final</version>
+=======
+  <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
   <packaging>pom</packaging>
   <name>Quarkus Platform - GoogleCloudServices - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -44,19 +48,32 @@
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-google-cloud-services-bom-quarkus-platform-descriptor</artifactId>
+<<<<<<< HEAD
         <version>2.7.5.Final</version>
         <type>json</type>
         <classifier>2.7.5.Final</classifier>
+=======
+        <version>2.2.5.Final-redhat-00007</version>
+        <type>json</type>
+        <classifier>2.2.5.Final-redhat-00007</classifier>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-google-cloud-services-bom-quarkus-platform-properties</artifactId>
+<<<<<<< HEAD
         <version>2.7.5.Final</version>
+=======
+        <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
         <type>properties</type>
       </dependency>
       <dependency>
@@ -2102,12 +2119,8 @@
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
-        <artifactId>guava-testlib</artifactId>
-        <version>30.1.1-jre</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
+<<<<<<< HEAD
         <version>30.1.1-jre</version>
         <exclusions>
           <exclusion>
@@ -2117,6 +2130,13 @@
           <exclusion>
             <groupId>com.google.guava</groupId>
             <artifactId>listenablefuture</artifactId>
+=======
+        <version>30.1.1.jre-redhat-00001</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
+>>>>>>> 3e34b876e... Regenerate BOMs
           </exclusion>
         </exclusions>
       </dependency>
@@ -2168,6 +2188,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java-util</artifactId>
+<<<<<<< HEAD
         <version>3.19.3</version>
         <exclusions>
           <exclusion>
@@ -2175,11 +2196,18 @@
             <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
+=======
+        <version>3.18.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
+<<<<<<< HEAD
         <version>3.19.3</version>
+=======
+        <version>3.18.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
@@ -2189,72 +2217,128 @@
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-alts</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-api</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-auth</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-context</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-core</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-grpclb</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty-shaded</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-okhttp</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf-lite</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-services</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-stub</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2.redhat-00001</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing</artifactId>
+<<<<<<< HEAD
         <version>1.43.2</version>
+=======
+        <version>1.41.2</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
       </dependency>
       <dependency>
         <groupId>io.opencensus</groupId>
@@ -2363,6 +2447,30 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-install</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-deploy</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
   <profiles>
     <profile>
       <id>release</id>

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
+<<<<<<< HEAD:generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-kafka-oauth/pom.xml
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
     <version>2.7.5.Final</version>
+=======
+    <groupId>com.redhat.quarkus.platform</groupId>
+    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
+    <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-processes-postgresql/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-kafka-oauth</artifactId>
@@ -181,7 +187,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>${quarkus-bom.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>

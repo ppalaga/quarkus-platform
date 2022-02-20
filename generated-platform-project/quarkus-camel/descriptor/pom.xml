@@ -3,9 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-parent</artifactId>
+<<<<<<< HEAD
     <version>2.7.5.Final</version>
+=======
+    <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-camel-bom-quarkus-platform-descriptor</artifactId>
@@ -16,7 +20,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>io.quarkus.platform</groupId>
+      <groupId>com.redhat.quarkus.platform</groupId>
       <artifactId>quarkus-camel-bom</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -54,28 +58,29 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-camel-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>${quarkus-bom.version}</quarkusCoreVersion>
+          <upstreamQuarkusCoreVersion>2.2.5.Final</upstreamQuarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
             <version>${platform.release}</version>
             <members>
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+<<<<<<< HEAD
               <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-kogito-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+=======
+>>>>>>> 3e34b876e... Regenerate BOMs
               <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
           <processGroupIds>
             <groupId>org.apache.camel.quarkus</groupId>
           </processGroupIds>
+<<<<<<< HEAD
           <ignoredArtifacts>
             <artifact>io.quarkus:quarkus-amazon-common</artifact>
             <artifact>io.quarkus:quarkus-amazon-dynamodb</artifact>
@@ -99,6 +104,11 @@
             <artifact>io.quarkus:quarkus-neo4j</artifact>
             <artifact>io.quarkus:quarkus-vault</artifact>
           </ignoredArtifacts>
+=======
+          <metadataOverrideArtifacts>
+            <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:2.2.0.fuse-800021-redhat-00006</artifact>
+          </metadataOverrideArtifacts>
+>>>>>>> 3e34b876e... Regenerate BOMs
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>

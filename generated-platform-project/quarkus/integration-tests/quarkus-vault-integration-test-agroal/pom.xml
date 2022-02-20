@@ -3,9 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
+<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test-agroal/pom.xml
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-integration-tests-parent</artifactId>
     <version>2.7.5.Final</version>
+=======
+    <groupId>com.redhat.quarkus.platform</groupId>
+    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
+    <version>2.2.5.Final-redhat-00007</version>
+>>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-processes-infinispan/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-vault-integration-test-agroal</artifactId>
@@ -39,6 +45,31 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-agroal-deployment</artifactId>
       <scope>test</scope>
+<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test-agroal/pom.xml
+=======
+      <exclusions>
+        <exclusion>
+          <groupId>javax.activation</groupId>
+          <artifactId>activation</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.activation</groupId>
+          <artifactId>javax.activation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>jakarta.activation</groupId>
+          <artifactId>jakarta.activation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-osgi</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
+>>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-processes-infinispan/pom.xml
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.vault</groupId>
@@ -128,7 +159,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>${quarkus-bom.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
