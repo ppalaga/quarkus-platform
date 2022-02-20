@@ -5,20 +5,20 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-universe-parent</artifactId>
-    <version>2.2.5.Final</version>
+    <version>2.2.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>io.quarkus</groupId>
+  <groupId>com.redhat.quarkus</groupId>
   <artifactId>quarkus-universe-bom-quarkus-platform-properties</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Quarkus Universe - Quarkus Platform Properties</name>
   <properties>
-    <platform.quarkus.native.builder-image>quay.io/quarkus/ubi-quarkus-native-image:21.3-java11</platform.quarkus.native.builder-image>
+    <platform.quarkus.native.builder-image>registry.access.redhat.com/quarkus/mandrel-21-rhel8:21.3</platform.quarkus.native.builder-image>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus</groupId>
+        <groupId>com.redhat.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>

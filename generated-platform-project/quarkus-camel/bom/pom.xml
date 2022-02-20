@@ -2,9 +2,9 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.quarkus.platform</groupId>
+  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-camel-bom</artifactId>
-  <version>2.2.5.Final</version>
+  <version>2.2.5.Final-redhat-00007</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -47,16 +47,16 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-camel-bom-quarkus-platform-descriptor</artifactId>
-        <version>2.2.5.Final</version>
+        <version>2.2.5.Final-redhat-00007</version>
         <type>json</type>
-        <classifier>2.2.5.Final</classifier>
+        <classifier>2.2.5.Final-redhat-00007</classifier>
       </dependency>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-camel-bom-quarkus-platform-properties</artifactId>
-        <version>2.2.5.Final</version>
+        <version>2.2.5.Final-redhat-00007</version>
         <type>properties</type>
       </dependency>
       <dependency>
@@ -105,6 +105,16 @@
         <version>2.3</version>
       </dependency>
       <dependency>
+        <groupId>com.atlassian.jira</groupId>
+        <artifactId>jira-rest-java-client-api</artifactId>
+        <version>5.2.2.redhat-00003</version>
+      </dependency>
+      <dependency>
+        <groupId>com.atlassian.jira</groupId>
+        <artifactId>jira-rest-java-client-core</artifactId>
+        <version>5.2.2.redhat-00003</version>
+      </dependency>
+      <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-ai-formrecognizer</artifactId>
         <version>3.0.8</version>
@@ -122,12 +132,12 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-communication-common</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-communication-identity</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -237,12 +247,12 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-security-keyvault-keys</artifactId>
-        <version>4.2.8</version>
+        <version>4.3.0</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-security-keyvault-secrets</artifactId>
-        <version>4.2.8</version>
+        <version>4.3.0</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -320,12 +330,12 @@
         <version>4.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>metrics-core</artifactId>
             <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>HdrHistogram</artifactId>
             <groupId>org.hdrhistogram</groupId>
+            <artifactId>HdrHistogram</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -391,8 +401,8 @@
         <version>2.1.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>asm-util</artifactId>
             <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2278,11 +2288,6 @@
         <version>3.0.1</version>
       </dependency>
       <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava-testlib</artifactId>
-        <version>30.1.1-jre</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-android</artifactId>
         <version>1.38.0</version>
@@ -2325,7 +2330,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java-util</artifactId>
-        <version>3.17.3</version>
+        <version>3.18.2.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.google.zxing</groupId>
@@ -2375,7 +2380,7 @@
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>nimbus-jose-jwt</artifactId>
-        <version>9.10</version>
+        <version>9.10.0.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>com.nimbusds</groupId>
@@ -2388,24 +2393,19 @@
         <version>1.4.2</version>
       </dependency>
       <dependency>
-        <groupId>com.squareup.okio</groupId>
-        <artifactId>okio</artifactId>
-        <version>1.17.2</version>
-      </dependency>
-      <dependency>
         <groupId>com.squareup.retrofit2</groupId>
         <artifactId>converter-jackson</artifactId>
-        <version>2.5.0</version>
+        <version>2.5.0.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.retrofit2</groupId>
         <artifactId>retrofit</artifactId>
-        <version>2.5.0</version>
+        <version>2.5.0.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.sun.istack</groupId>
         <artifactId>istack-commons-runtime</artifactId>
-        <version>3.0.10</version>
+        <version>3.0.10.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.sun.mail</groupId>
@@ -2413,8 +2413,8 @@
         <version>1.6.6</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.activation</artifactId>
             <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2426,7 +2426,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.17</version>
+        <version>1.4.18.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.zendesk</groupId>
@@ -2439,24 +2439,29 @@
         <version>1.9.4</version>
       </dependency>
       <dependency>
-        <groupId>commons-cli</groupId>
-        <artifactId>commons-cli</artifactId>
-        <version>1.4</version>
-      </dependency>
-      <dependency>
         <groupId>commons-collections</groupId>
         <artifactId>commons-collections</artifactId>
-        <version>3.2.2</version>
+        <version>3.2.2.redhat-2</version>
       </dependency>
       <dependency>
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
-        <version>2.6</version>
+        <version>2.6.0.redhat-7</version>
       </dependency>
       <dependency>
         <groupId>io.apicurio</groupId>
         <artifactId>apicurio-registry-utils-converter</artifactId>
         <version>2.0.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.confluent</groupId>
+        <artifactId>kafka-connect-avro-converter</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.confluent</groupId>
+        <artifactId>kafka-connect-protobuf-converter</artifactId>
+        <version>6.0.2</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
@@ -2549,17 +2554,17 @@
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-healthchecks</artifactId>
-        <version>4.0.1</version>
+        <version>4.1.19</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-jmx</artifactId>
-        <version>4.0.1</version>
+        <version>4.1.19</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-servlets</artifactId>
-        <version>4.0.1</version>
+        <version>4.1.19</version>
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
@@ -2649,7 +2654,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>3.9.1</version>
+        <version>3.9.1.redhat-00010</version>
       </dependency>
       <dependency>
         <groupId>io.vitess</groupId>
@@ -2674,7 +2679,7 @@
       <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
-        <version>2.10.6</version>
+        <version>2.10.6.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>log4j</groupId>
@@ -2724,12 +2729,12 @@
       <dependency>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-ipc-jetty</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.2.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-ipc-netty</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.2.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -2854,17 +2859,17 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-attachments-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-attachments</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-avro-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -2879,7 +2884,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-avro</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -2914,22 +2919,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-cw-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-cw</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-ddb-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-ddb</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -2984,12 +2989,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-kinesis-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-kinesis</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3004,12 +3009,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-lambda-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-lambda</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3034,12 +3039,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-s3-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-s3</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3054,22 +3059,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-sns-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-sns</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-sqs-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-aws2-sqs</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3114,12 +3119,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-azure-storage-blob-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-azure-storage-blob</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3134,12 +3139,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-azure-storage-queue-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-azure-storage-queue</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3164,7 +3169,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-bean-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3179,7 +3184,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-bean</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3204,12 +3209,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-bindy-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-bindy</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3274,12 +3279,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-cassandraql-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-cassandraql</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3384,22 +3389,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-core-cloud-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-core-cloud</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-core-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-core</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3424,12 +3429,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-cron-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-cron</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3524,12 +3529,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-direct-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-direct</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3604,12 +3609,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-elasticsearch-rest-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-elasticsearch-rest</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3684,7 +3689,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-file-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3699,7 +3704,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-file</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3744,12 +3749,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-ftp-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-ftp</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3924,12 +3929,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-gson-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-gson</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -3984,32 +3989,32 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-hl7-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-hl7</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-http-common-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-http-common</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-http-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-http</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4114,42 +4119,42 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson-avro-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson-avro</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson-protobuf-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson-protobuf</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jackson</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jacksonxml-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jacksonxml</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4164,22 +4169,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-java-joor-dsl-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-java-joor-dsl</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jaxb-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jaxb</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4274,22 +4279,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jira-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jira</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jms-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jms</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4409,12 +4414,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jsonpath-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jsonpath</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4429,27 +4434,27 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jta-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-jta</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kafka-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kafka</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kamelet-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4464,7 +4469,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kamelet</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4489,12 +4494,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kubernetes-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-kubernetes</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4554,12 +4559,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-log-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-log</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4624,12 +4629,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-master-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-master</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4654,22 +4659,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-microprofile-health-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-microprofile-health</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-microprofile-metrics-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-microprofile-metrics</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4694,27 +4699,27 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mllp-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mllp</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mock-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mock</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mongodb-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4729,7 +4734,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-mongodb</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4794,7 +4799,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-netty-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4809,7 +4814,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-netty</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4864,12 +4869,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-openapi-java-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-openapi-java</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -4964,12 +4969,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-platform-http-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-platform-http</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5099,7 +5104,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-rest-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5114,7 +5119,7 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-rest</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5159,12 +5164,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-salesforce-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-salesforce</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5179,12 +5184,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-saxon-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-saxon</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5209,12 +5214,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-seda-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-seda</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5279,12 +5284,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-slack-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-slack</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5329,12 +5334,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-soap-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-soap</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5389,12 +5394,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-sql-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-sql</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5469,12 +5474,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-ahc-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-ahc</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5484,12 +5489,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-aws2-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-aws2</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5499,12 +5504,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-azure-core-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-azure-core</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5519,22 +5524,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-common-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-common</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-commons-logging-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-commons-logging</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5559,42 +5564,42 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-google-http-client-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-google-http-client</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-httpclient-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-httpclient</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-jackson-dataformat-xml-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-jackson-dataformat-xml</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-jetty-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-jetty</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5609,22 +5614,22 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-mongodb-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-mongodb</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-reactor-netty-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-reactor-netty</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5639,27 +5644,27 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-spring-beans</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-spring-context</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-spring-core</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-spring-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-spring</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5674,12 +5679,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-webhook-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-webhook</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5694,12 +5699,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-xstream-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-xstream</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5729,12 +5734,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-telegram-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-telegram</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5764,12 +5769,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-timer-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-timer</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5944,12 +5949,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-xml-io-dsl-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-xml-io-dsl</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5994,12 +5999,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-xpath-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-xpath</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -6034,12 +6039,12 @@
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-yaml-dsl-deployment</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-yaml-dsl</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.0.fuse-800021-redhat-00006</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -6107,8 +6112,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6123,12 +6128,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>netty-all</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6138,27 +6143,27 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.apache.qpid</groupId>
             <artifactId>qpid-jms-client</artifactId>
-            <groupId>org.apache.qpid</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>proton-j</artifactId>
             <groupId>org.apache.qpid</groupId>
+            <artifactId>proton-j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-api</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6191,8 +6196,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6202,12 +6207,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>geronimo-activation_1.1_spec</artifactId>
             <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-activation_1.1_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6219,7 +6224,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-attachments</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6234,7 +6239,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-avro</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6252,30 +6257,30 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-cw</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-ddb</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6285,8 +6290,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6296,8 +6301,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6307,8 +6312,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6318,8 +6323,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6329,19 +6334,19 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-kinesis</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6351,19 +6356,19 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-lambda</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6373,8 +6378,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6384,19 +6389,19 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-s3</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6406,30 +6411,30 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-sns</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-aws2-sqs</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6439,8 +6444,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6450,8 +6455,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6466,19 +6471,19 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-azure-storage-blob</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6490,11 +6495,11 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-azure-storage-queue</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6511,7 +6516,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-base</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6521,7 +6526,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-bean</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6536,7 +6541,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-bindy</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6556,7 +6561,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-browse</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6571,12 +6576,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cassandraql</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-catalog</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6596,7 +6601,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cloud</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6609,8 +6614,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>asm</artifactId>
             <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6627,7 +6632,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-componentdsl</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6637,7 +6642,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-controlbus</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6645,35 +6650,35 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core-catalog</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core-engine</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core-languages</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core-processor</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6688,7 +6693,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cron</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6703,7 +6708,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-dataformat</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6714,6 +6719,12 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-debezium-mongodb</artifactId>
         <version>3.11.1</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6738,7 +6749,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-direct</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6778,11 +6789,11 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-elasticsearch-rest</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.elasticsearch.client</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6794,7 +6805,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-endpointdsl</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6827,12 +6838,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jcl-over-slf4j</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>xpp3</artifactId>
             <groupId>xpp3</groupId>
+            <artifactId>xpp3</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6844,7 +6855,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-file</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6862,8 +6873,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6875,7 +6886,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-ftp</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -6903,12 +6914,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>google-cloud-bigquery</artifactId>
             <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-bigquery</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>guava</artifactId>
             <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6918,8 +6929,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6929,8 +6940,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6945,8 +6956,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6956,12 +6967,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>google-cloud-pubsub</artifactId>
             <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-pubsub</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>guava</artifactId>
             <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6971,8 +6982,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7009,7 +7020,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-gson</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7027,12 +7038,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7042,16 +7053,16 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7063,30 +7074,30 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-health</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-hl7</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-http-common</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-http</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7106,8 +7117,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7127,8 +7138,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>infinispan-core</artifactId>
             <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7155,22 +7166,22 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jackson-avro</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jackson-protobuf</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jackson</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jacksonxml</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7180,12 +7191,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-java-joor-dsl</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jaxb</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7203,8 +7214,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.ws.rs-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7219,12 +7230,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>spring-beans</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7251,66 +7262,66 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jira</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>j2objc-annotations</artifactId>
             <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>com.sun.jersey</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>httpclient-cache</artifactId>
             <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient-cache</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jms</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7340,20 +7351,20 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7395,7 +7406,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jsonpath</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7405,22 +7416,22 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-jta</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-kafka</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-kamelet-reify</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-kamelet</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7430,11 +7441,11 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-kubernetes</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>kubernetes-client</artifactId>
             <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7446,7 +7457,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-language</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7466,7 +7477,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-log</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7474,8 +7485,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.apache.cxf</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7502,11 +7513,11 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-main</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-headersmap</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-headersmap</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7518,7 +7529,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-master</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7528,7 +7539,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-microprofile-config</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7536,24 +7547,24 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-fault-tolerance-api</artifactId>
             <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
+            <artifactId>microprofile-fault-tolerance-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-microprofile-health</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-microprofile-metrics</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-metrics-api</artifactId>
             <groupId>org.eclipse.microprofile.metrics</groupId>
+            <artifactId>microprofile-metrics-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7570,12 +7581,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-mllp</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-mock</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7583,19 +7594,19 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.mongodb</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-mongodb</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.mongodb</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7635,15 +7646,15 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-netty</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7671,15 +7682,21 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-openapi-java</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7687,8 +7704,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7698,8 +7715,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>grpc-netty-shaded</artifactId>
             <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7714,12 +7731,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>optaplanner-core</artifactId>
             <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>optaplanner-persistence-common</artifactId>
             <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-persistence-common</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7751,7 +7768,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-platform-http-vertx</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7774,8 +7791,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>j2objc-annotations</artifactId>
             <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7785,12 +7802,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>quartz</artifactId>
             <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>c3p0</artifactId>
             <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7800,8 +7817,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>quickfixj-codegenerator</artifactId>
             <groupId>org.quickfixj</groupId>
+            <artifactId>quickfixj-codegenerator</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7828,7 +7845,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-ref</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7838,7 +7855,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-rest</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7846,8 +7863,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7864,12 +7881,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-saga</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-salesforce</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7879,12 +7896,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-saxon</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-scheduler</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7894,7 +7911,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-seda</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7902,12 +7919,12 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jaxws-api</artifactId>
             <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>saaj-impl</artifactId>
             <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7939,7 +7956,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-slack</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7959,7 +7976,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-soap</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -7967,8 +7984,8 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7993,35 +8010,35 @@
         <version>3.11.1</version>
         <exclusions>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-sql</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8058,12 +8075,12 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-stub</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-support</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8083,7 +8100,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-telegram</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8103,7 +8120,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-timer</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8123,7 +8140,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-validator</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8153,7 +8170,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-vm</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8168,7 +8185,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-webhook</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8198,22 +8215,22 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xml-io-dsl</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xml-io</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xml-jaxb</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xml-jaxp</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8228,7 +8245,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xpath</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8238,7 +8255,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xslt</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8248,7 +8265,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-yaml-dsl</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -8283,7 +8300,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>spi-annotations</artifactId>
-        <version>3.11.1</version>
+        <version>3.11.1.fuse-800025-redhat-00003</version>
       </dependency>
       <dependency>
         <groupId>org.apache.cassandra</groupId>
@@ -8293,7 +8310,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-math3</artifactId>
-        <version>3.6.1</version>
+        <version>3.6.1.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
@@ -8313,7 +8330,7 @@
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-test</artifactId>
-        <version>4.2.0</version>
+        <version>4.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
@@ -8328,38 +8345,73 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-api</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0.redhat-00005</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-file</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0.redhat-00005</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-json</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0.redhat-00005</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-runtime</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0.redhat-00005</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-transforms</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0.redhat-00005</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>kafka_2.12</artifactId>
-        <version>2.8.1</version>
+        <version>2.8.0</version>
         <classifier>test</classifier>
       </dependency>
       <dependency>
         <groupId>org.apache.kudu</groupId>
         <artifactId>kudu-client</artifactId>
         <version>1.14.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-1.2-api</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-jcl</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-jul</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>2.17.1.redhat-00002</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-web</artifactId>
+        <version>2.17.1.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>org.apache.qpid</groupId>
@@ -8372,20 +8424,20 @@
         <version>3.4.10</version>
         <exclusions>
           <exclusion>
-            <artifactId>snakeyaml</artifactId>
             <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>hppc</artifactId>
             <groupId>com.carrotsearch</groupId>
+            <artifactId>hppc</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>com.jcabi</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>exp4j</artifactId>
             <groupId>net.objecthunter</groupId>
+            <artifactId>exp4j</artifactId>
           </exclusion>
         </exclusions>
         <optional>true</optional>
@@ -8560,22 +8612,22 @@
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-core-asl</artifactId>
-        <version>1.9.13</version>
+        <version>1.9.13.redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-jaxrs</artifactId>
-        <version>1.9.13</version>
+        <version>1.9.13.redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-mapper-asl</artifactId>
-        <version>1.9.13</version>
+        <version>1.9.13.redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-xc</artifactId>
-        <version>1.9.13</version>
+        <version>1.9.13.redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.mojo</groupId>
@@ -8585,7 +8637,7 @@
       <dependency>
         <groupId>org.codehaus.woodstox</groupId>
         <artifactId>stax2-api</artifactId>
-        <version>4.2</version>
+        <version>4.2.0.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>org.easytesting</groupId>
@@ -8929,7 +8981,7 @@
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js-scriptengine</artifactId>
-        <version>20.0.0</version>
+        <version>21.2.0</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.js</groupId>
@@ -8969,12 +9021,12 @@
       <dependency>
         <groupId>org.jruby.joni</groupId>
         <artifactId>joni</artifactId>
-        <version>2.1.31</version>
+        <version>2.1.31.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.12.1</version>
+        <version>1.12.1.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>org.linguafranca.pwdb</groupId>
@@ -8982,15 +9034,9 @@
         <version>2.1.4</version>
       </dependency>
       <dependency>
-        <groupId>org.lz4</groupId>
-        <artifactId>lz4-java</artifactId>
-        <version>1.6.0</version>
-        <optional>true</optional>
-      </dependency>
-      <dependency>
         <groupId>org.mvel</groupId>
         <artifactId>mvel2</artifactId>
-        <version>2.4.12.Final</version>
+        <version>2.4.12.Final-redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>org.openjdk.jmh</groupId>
@@ -9059,8 +9105,8 @@
         <version>5.3.9</version>
         <exclusions>
           <exclusion>
-            <artifactId>spring-jcl</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-jcl</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9110,8 +9156,8 @@
         <version>2.7.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>xml-apis</artifactId>
             <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
