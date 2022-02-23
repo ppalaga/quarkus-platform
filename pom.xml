@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>2.2.5.Final-redhat-00007</version>
+    <version>2.2.5.Camel-temporary-redhat-00001</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -341,20 +341,6 @@
                                     <transformWith>src/main/resources/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-tests.version}</testCatalogArtifact>
-                                <tests>
-                                    <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus-tests.version}</artifact>
-                                    </test>
-                                    <test><!-- New York has been changed to New York City -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Caused by: java.lang.AbstractMethodError: Receiver class com.oracle.truffle.polyglot.PolyglotEngineDispatch does not define or inherit an implementation of the resolved method 'abstract org.graalvm.polyglot.Context createContext(java.lang.Object, java.io.OutputStream, java.io.OutputStream, java.io.InputStream, boolean, org.graalvm.polyglot.HostAccess, org.graalvm.polyglot.PolyglotAccess, boolean, boolean, boolean, boolean, boolean, java.util.function.Predicate, java.util.Map, java.util.Map, java.lang.String[], org.graalvm.polyglot.io.FileSystem, java.lang.Object, boolean, org.graalvm.polyglot.io.ProcessHandler, org.graalvm.polyglot.EnvironmentAccess, java.util.Map, java.time.ZoneId, java.lang.Object, java.lang.String, java.lang.ClassLoader, boolean)' of abstract class org.graalvm.polyglot.impl.AbstractPolyglotImpl$AbstractEngineDispatch. -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                </tests>
                             </member>
                             <member>
                                 <name>Hazelcast</name>
@@ -598,9 +584,8 @@
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
-                <camel-quarkus.version>2.2.0.fuse-800021-redhat-00006</camel-quarkus.version>
-                <camel-quarkus-community.version>2.2.0</camel-quarkus-community.version>
-                <camel-quarkus-tests.version>${camel-quarkus-community.version}</camel-quarkus-tests.version>
+                <camel-quarkus.version>2.2.1.fuse-800013-redhat-00001</camel-quarkus.version>
+                <camel-quarkus-community.version>2.2.1</camel-quarkus-community.version>
             </properties>
             <build>
                 <plugins>
@@ -618,19 +603,6 @@
                                     <dependencyManagement>
                                         <dependency>com.google.code.findbugs:jsr305:3.0.2.redhat-00008</dependency> <!-- missing from the quarkus-bom in 2.2 -->
                                         <dependency>org.xerial.snappy:snappy-java:1.1.8.4-redhat-00002</dependency> <!-- Remove once https://github.com/quarkusio/quarkus/pull/21811 is available in Quarkus core version we depend on -->
-                                        <!-- Kafka connect-* constraints to align with Camel, workaround for https://issues.redhat.com/browse/QUARKUS-1604 and https://issues.redhat.com/browse/QUARKUS-1499 -->
-                                        <dependency>org.apache.kafka:connect-api:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:connect-file:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:connect-json:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:connect-runtime:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:connect-transforms:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:kafka-clients:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:kafka-log4j-appender:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:kafka-streams:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:kafka-streams-test-utils:2.8.0.redhat-00005</dependency>
-                                        <dependency>org.apache.kafka:kafka-tools:2.8.0.redhat-00005</dependency>
-                                        <!-- log4j -->
-                                        <dependency>org.apache.logging.log4j:log4j-api:2.17.1.redhat-00002</dependency>
                                     </dependencyManagement>
                                     <!-- Red Hat support metadata -->
                                     <metadataOverrideFiles>
@@ -658,12 +630,8 @@
                                         <name>Camel</name>
                                         <hidden>false</hidden>
                                         <dependencyManagement>
-                                            <dependency>com.atlassian.jira:jira-rest-java-client-api:5.2.2.redhat-00003</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/QUARKUS-1508 -->
-                                            <dependency>com.atlassian.jira:jira-rest-java-client-core:5.2.2.redhat-00003</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/QUARKUS-1508 -->
-                                            <dependency>org.antlr:antlr-runtime:3.5.2</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17951 -->
-                                            <dependency>org.antlr:antlr:3.5.2</dependency> <!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17951 -->
-                                            <dependencySpec><!-- Remove with Camel Quarkus 2.2.1 https://issues.redhat.com/browse/ENTESB-17960 -->
-                                                <artifact>org.apache.camel:camel-debezium-mongodb:3.11.1</artifact>
+                                            <dependencySpec><!-- Remove with CEQ 2.7.0+ https://issues.redhat.com/browse/ENTESB-17960 -->
+                                                <artifact>org.apache.camel:camel-debezium-mongodb:3.11.5</artifact>
                                                 <exclusions>
                                                     <exclusion>org.apache.maven:maven-artifact</exclusion>
                                                 </exclusions>
@@ -672,7 +640,6 @@
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-community.version}</testCatalogArtifact>
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>
