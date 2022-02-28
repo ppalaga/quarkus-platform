@@ -1,0 +1,17 @@
+{
+    "extensions": [
+        {
+            "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-elasticsearch-rest",
+            "metadata": {
+                "redhat-support": [
+                    "tech-preview"
+                ],
+                "status": [
+                    "stable",
+                    "deprecated"
+                ]
+            }
+        }
+    ]
+}
