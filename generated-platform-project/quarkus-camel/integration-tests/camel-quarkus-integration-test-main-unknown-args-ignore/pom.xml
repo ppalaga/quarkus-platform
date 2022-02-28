@@ -3,23 +3,42 @@
   <parent>
     <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
-    <version>2.2.5.Camel-temporary-redhat-00001</version>
+    <version>2.2.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-aws2-quarkus-client-grouped</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-aws2-quarkus-client-grouped</name>
+  <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-main-unknown-args-ignore</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-aws2-quarkus-client-grouped</artifactId>
+      <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
       <version>${camel-quarkus-tests.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-aws2-quarkus-client-grouped</artifactId>
+      <artifactId>camel-quarkus-integration-test-main-unknown-args-ignore</artifactId>
       <version>${camel-quarkus-tests.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-process-executor-support</artifactId>
+      <version>${camel-quarkus-tests.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -51,7 +70,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-quarkus-client-grouped</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -111,7 +130,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-quarkus-client-grouped</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -126,7 +145,8 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-quarkus-client-grouped:${camel-quarkus.version}</appArtifact>
+                  <skip>true</skip>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
