@@ -3,13 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.redhat.quarkus.platform</groupId>
+    <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-<<<<<<< HEAD:generated-platform-project/quarkus-kogito/integration-tests/kogito-addons-quarkus-messaging-it/pom.xml
     <version>2.7.5.Final</version>
-=======
-    <version>2.2.5.Final-redhat-00007</version>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-processes-mongodb/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>kogito-addons-quarkus-messaging-it</artifactId>
@@ -169,7 +165,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus-bom.version}</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>

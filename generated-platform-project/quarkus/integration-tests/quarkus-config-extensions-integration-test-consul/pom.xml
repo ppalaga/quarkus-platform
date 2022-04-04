@@ -3,15 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-config-extensions-integration-test-consul/pom.xml
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-integration-tests-parent</artifactId>
     <version>2.7.5.Final</version>
-=======
-    <groupId>com.redhat.quarkus.platform</groupId>
-    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-    <version>2.2.5.Final-redhat-00007</version>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/kogito-quarkus-rules-integration-test-session/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-config-extensions-integration-test-consul</artifactId>
@@ -131,7 +125,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus-bom.version}</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>

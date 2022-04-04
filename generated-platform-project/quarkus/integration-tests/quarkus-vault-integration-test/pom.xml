@@ -3,15 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test/pom.xml
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-integration-tests-parent</artifactId>
     <version>2.7.5.Final</version>
-=======
-    <groupId>com.redhat.quarkus.platform</groupId>
-    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-    <version>2.2.5.Final-redhat-00007</version>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-processes-persistence-common/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-vault-integration-test</artifactId>
@@ -42,13 +36,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test/pom.xml
           <groupId>org.hamcrest</groupId>
           <artifactId>hamcrest-core</artifactId>
-=======
-          <groupId>javax.activation</groupId>
-          <artifactId>activation</artifactId>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-processes-persistence-common/pom.xml
         </exclusion>
       </exclusions>
     </dependency>
@@ -69,7 +58,6 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-<<<<<<< HEAD:generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test/pom.xml
           <groupId>javax.servlet</groupId>
           <artifactId>javax.servlet-api</artifactId>
         </exclusion>
@@ -88,18 +76,6 @@
         <exclusion>
           <groupId>com.google.code.findbugs</groupId>
           <artifactId>jsr305</artifactId>
-=======
-          <groupId>javax.activation</groupId>
-          <artifactId>javax.activation-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>jakarta.activation</groupId>
-          <artifactId>jakarta.activation-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
-          <artifactId>jaxb-osgi</artifactId>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-processes-persistence-common/pom.xml
         </exclusion>
         <exclusion>
           <groupId>commons-logging</groupId>
@@ -185,7 +161,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus-bom.version}</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>

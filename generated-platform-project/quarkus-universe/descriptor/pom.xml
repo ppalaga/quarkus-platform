@@ -5,20 +5,16 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-universe-parent</artifactId>
-<<<<<<< HEAD
     <version>2.7.5.Final</version>
-=======
-    <version>2.2.5.Final-redhat-00007</version>
->>>>>>> 3e34b876e... Regenerate BOMs
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.redhat.quarkus</groupId>
+  <groupId>io.quarkus</groupId>
   <artifactId>quarkus-universe-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Quarkus Universe - Quarkus Platform Descriptor</name>
   <dependencies>
     <dependency>
-      <groupId>com.redhat.quarkus</groupId>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-universe-bom</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -56,8 +52,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-universe-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus-bom.version}</quarkusCoreVersion>
-          <upstreamQuarkusCoreVersion>2.2.5.Final</upstreamQuarkusCoreVersion>
+          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${project.groupId}</platformKey>
             <stream>${platform.stream}</stream>
@@ -66,7 +61,6 @@
               <member>${project.groupId}:quarkus-universe-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
-<<<<<<< HEAD
           <ignoredArtifacts>
             <artifact>io.quarkus:quarkus-amazon-common</artifact>
             <artifact>io.quarkus:quarkus-amazon-dynamodb</artifact>
@@ -91,12 +85,6 @@
             <artifact>io.quarkus:quarkus-vault</artifact>
           </ignoredArtifacts>
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
-=======
-          <metadataOverrideArtifacts>
-            <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:2.2.0.fuse-800021-redhat-00006</artifact>
-          </metadataOverrideArtifacts>
-          <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json,${project.basedir}/../../../src/main/resources/core/extensions-support-overrides.json</overridesFile>
->>>>>>> 3e34b876e... Regenerate BOMs
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
       </plugin>

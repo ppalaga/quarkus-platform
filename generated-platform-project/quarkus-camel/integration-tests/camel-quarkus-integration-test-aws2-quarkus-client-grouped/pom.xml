@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-<<<<<<< HEAD:generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-aws2-quarkus-client-grouped/pom.xml
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
     <version>2.7.5.Final</version>
-=======
-    <groupId>com.redhat.quarkus.platform</groupId>
-    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-    <version>2.2.5.Final-redhat-00007</version>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-decisions/pom.xml
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-aws2-quarkus-client-grouped</artifactId>
@@ -53,32 +47,6 @@
         <exclusion>
           <groupId>com.sun.xml.bind</groupId>
           <artifactId>jaxb-osgi</artifactId>
-<<<<<<< HEAD:generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-aws2-quarkus-client-grouped/pom.xml
-=======
-        </exclusion>
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>json-schema-validator</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.activation</groupId>
-          <artifactId>activation</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.google.code.findbugs</groupId>
-          <artifactId>jsr305</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
-          <artifactId>jaxb-osgi</artifactId>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-decisions/pom.xml
         </exclusion>
         <exclusion>
           <groupId>commons-logging</groupId>
@@ -104,7 +72,6 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-<<<<<<< HEAD:generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-aws2-quarkus-client-grouped/pom.xml
           <groupId>com.google.code.findbugs</groupId>
           <artifactId>jsr305</artifactId>
         </exclusion>
@@ -115,10 +82,6 @@
         <exclusion>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
-=======
-          <groupId>io.swagger.core.v3</groupId>
-          <artifactId>swagger-annotations</artifactId>
->>>>>>> 3e34b876e... Regenerate BOMs:generated-platform-project/quarkus-kogito/integration-tests/integration-tests-quarkus-decisions/pom.xml
         </exclusion>
       </exclusions>
     </dependency>
@@ -220,7 +183,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus-bom.version}</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
