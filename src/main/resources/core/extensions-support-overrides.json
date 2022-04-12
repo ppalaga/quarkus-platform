@@ -75,15 +75,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-elasticsearch-rest-client",
-      "metadata": {
-        "redhat-support": [
-          "supported"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-grpc",
       "metadata": {
         "redhat-support": [
@@ -283,15 +274,6 @@
     {
       "group-id": "io.quarkus",
       "artifact-id": "quarkus-kubernetes",
-      "metadata": {
-        "redhat-support": [
-          "dev-support"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
-      "artifact-id": "quarkus-kubernetes-client",
       "metadata": {
         "redhat-support": [
           "dev-support"
@@ -995,6 +977,24 @@
       "metadata": {
         "redhat-support": [
           "dev-support"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-resteasy-links",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-kafka-streams",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
         ]
       }
     }
