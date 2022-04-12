@@ -672,7 +672,7 @@
       "artifact-id": "quarkus-resteasy-reactive-jaxb",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "tech-preview"
         ]
       }
     },
@@ -950,6 +950,51 @@
       "metadata": {
         "redhat-support": [
           "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-graphql",
+      "metadata": {
+        "redhat-support": [
+          "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-graphql-client",
+      "metadata": {
+        "redhat-support": [
+          "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-hibernate-reactive",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-stork",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-jacoco",
+      "metadata": {
+        "redhat-support": [
+          "dev-support"
         ]
       }
     }
