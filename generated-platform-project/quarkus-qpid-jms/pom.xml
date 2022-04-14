@@ -5,10 +5,9 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>2.7.5.Final-redhat-00004</version>
+    <version>2.7.5.Final-redhat-00005</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-qpid-jms-parent</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - QpidJMS - Parent</name>
@@ -18,31 +17,4 @@
     <module>descriptor</module>
     <module>properties</module>
   </modules>
-  <properties>
-    <gpg.skip>true</gpg.skip>
-  </properties>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
 </project>
