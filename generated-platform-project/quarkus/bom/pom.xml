@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-bom</artifactId>
-  <version>2.7.5.Final-redhat-00005</version>
+  <version>2.7.5.Final-redhat-00006</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Core - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -49,14 +49,14 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom-quarkus-platform-descriptor</artifactId>
-        <version>2.7.5.Final-redhat-00005</version>
+        <version>2.7.5.Final-redhat-00006</version>
         <type>json</type>
-        <classifier>2.7.5.Final-redhat-00005</classifier>
+        <classifier>2.7.5.Final-redhat-00006</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom-quarkus-platform-properties</artifactId>
-        <version>2.7.5.Final-redhat-00005</version>
+        <version>2.7.5.Final-redhat-00006</version>
         <type>properties</type>
       </dependency>
       <dependency>
@@ -2752,12 +2752,12 @@
       <dependency>
         <groupId>io.quarkus.arc</groupId>
         <artifactId>arc-processor</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
         <artifactId>arc</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.gizmo</groupId>
@@ -2822,12 +2822,12 @@
       <dependency>
         <groupId>io.quarkus.qute</groupId>
         <artifactId>qute-core</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.qute</groupId>
         <artifactId>qute-generator</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
@@ -2837,7 +2837,7 @@
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
@@ -2847,17 +2847,17 @@
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-jsonb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
@@ -2867,12 +2867,12 @@
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-vertx</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.security</groupId>
@@ -2892,17 +2892,17 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3072,12 +3072,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apache-httpclient-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apache-httpclient</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3092,12 +3092,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-arc-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-arc</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3127,12 +3127,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-avro-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-avro</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3157,12 +3157,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-app-model</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-core</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3172,52 +3172,52 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-maven-resolver</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-runner</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-builder</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-caffeine-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-caffeine</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-class-change-agent</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-config-yaml-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-config-yaml</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3242,7 +3242,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3267,92 +3267,92 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-openshift-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-openshift</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-s2i-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-s2i</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-util</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-core-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-core</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-credentials-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-credentials</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-deployment-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-development-mode-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-db2</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3367,37 +3367,37 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mariadb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mssql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mysql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-oracle</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-postgresql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-registry-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3407,17 +3407,17 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-utilities</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3442,12 +3442,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3582,22 +3582,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-codegen</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3608,12 +3608,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-stubs</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -3634,22 +3634,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3664,27 +3664,27 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-rest-data-panache-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-rest-data-panache</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3709,7 +3709,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3734,32 +3734,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-elasticsearch-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-elasticsearch</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-ide-launcher</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <exclusions>
           <exclusion>
             <groupId>*</groupId>
@@ -3770,27 +3770,27 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3805,47 +3805,47 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaeger-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaeger</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxp-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxp</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxrs-client-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxrs-client-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxrs-spi-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3870,52 +3870,52 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mariadb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mariadb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mssql-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mssql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mysql-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mysql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-oracle-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-oracle</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-postgresql-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-postgresql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3940,27 +3940,27 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonp-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonp</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -3995,22 +3995,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-streams-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-streams</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4025,12 +4025,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-authorization-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-authorization</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4045,67 +4045,67 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-internal-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-internal</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-config-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-config</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4140,12 +4140,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-json-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-json</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4160,32 +4160,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mailer-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mailer</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-registry-prometheus-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4200,12 +4200,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4250,32 +4250,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-reactive-streams-operators-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-reactive-streams-operators</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-jta-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-jta</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4310,57 +4310,57 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-netty-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-netty</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-filter-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-filter</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-reactive-filter-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-reactive-filter</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4385,42 +4385,42 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry-exporter-jaeger-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry-exporter-jaeger</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4435,27 +4435,27 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-hibernate-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-hibernate-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4480,47 +4480,47 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-project-core-extension-codestarts</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-quartz-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-quartz</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-qute-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-qute</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-datasource-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-datasource</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-db2-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-db2-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4535,22 +4535,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mssql-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mssql-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mysql-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mysql-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4565,22 +4565,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-pg-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-pg-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-routes-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-routes</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4595,72 +4595,72 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-config-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-config</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jackson-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jsonb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jsonb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-mutiny-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-mutiny</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-reactive-jackson-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4675,189 +4675,189 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-data-panache-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-data-panache</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jackson-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jaxb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jaxb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-links-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-links</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-multipart-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-multipart</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-qute-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-qute</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jackson-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jackson-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jackson-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jaxb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jaxb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jsonb-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jsonb</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-kotlin-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4882,7 +4882,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-kotlin</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4897,17 +4897,17 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-qute-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-qute</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-server-spi-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4922,32 +4922,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-spi-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -4962,62 +4962,62 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-runtime-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-context-propagation-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-context-propagation</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-fault-tolerance-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5042,62 +5042,62 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-build-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-build</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-common-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <exclusions>
           <exclusion>
             <groupId>org.jboss.shrinkwrap</groupId>
@@ -5108,12 +5108,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <exclusions>
           <exclusion>
             <groupId>org.jboss.shrinkwrap</groupId>
@@ -5124,37 +5124,37 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-opentracing-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-opentracing</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging-amqp</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging-kafka-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging-kotlin</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5169,17 +5169,17 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-messaging</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-streams-operators-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-streams-operators</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5194,12 +5194,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-stork-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-stork</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5219,32 +5219,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-boot-properties-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-boot-properties</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cache-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cache</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cloud-config-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cloud-config-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5269,12 +5269,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-jpa-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-jpa</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5284,32 +5284,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-rest-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-rest</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-di-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-di</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-scheduled-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-scheduled</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5319,12 +5319,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-security-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-security</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5334,37 +5334,37 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-common</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy-classic-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy-classic</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy-reactive-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy-reactive</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5374,12 +5374,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-swagger-ui-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-swagger-ui</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5464,7 +5464,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-vertx</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5479,12 +5479,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5494,7 +5494,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5509,42 +5509,42 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-graphql-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-graphql</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-deployment-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-console-runtime-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-console-spi</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5559,7 +5559,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -5574,22 +5574,22 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-client-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-client</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-deployment</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
       </dependency>
       <dependency>
         <groupId>io.reactivex.rxjava2</groupId>

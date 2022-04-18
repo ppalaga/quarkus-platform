@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
-    <version>2.7.5.Final-redhat-00005</version>
+    <version>2.7.5.Final-redhat-00006</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-platform-parent</artifactId>
@@ -28,7 +28,7 @@
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>
-    <platform.release>2.7.5.Final-redhat-00005</platform.release>
+    <platform.release>2.7.5.Final-redhat-00006</platform.release>
     <platform.stream>2.7</platform.stream>
   </properties>
   <build>
