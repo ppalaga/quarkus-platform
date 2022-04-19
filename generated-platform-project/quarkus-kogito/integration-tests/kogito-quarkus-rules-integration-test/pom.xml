@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-    <version>2.7.5.Final-redhat-00006</version>
+    <version>2.7.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>kogito-quarkus-rules-integration-test</artifactId>
@@ -40,24 +40,24 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>javax.activation</groupId>
           <artifactId>activation</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>javax.activation</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>javax.activation-api</artifactId>
+          <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
-          <groupId>jakarta.activation</groupId>
           <artifactId>jakarta.activation-api</artifactId>
+          <groupId>jakarta.activation</groupId>
         </exclusion>
         <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
           <artifactId>jaxb-osgi</artifactId>
+          <groupId>com.sun.xml.bind</groupId>
         </exclusion>
         <exclusion>
-          <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
+          <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -102,7 +102,7 @@
                 <maven.repo.local>${settings.localRepository}</maven.repo.local>
                 <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                 <project.groupId>io.quarkus.platform</project.groupId>
-                <project.version>2.7.5.Final-redhat-00006</project.version>
+                <project.version>2.7.5.Final-redhat-00007</project.version>
               </systemProperties>
               <excludes>
                 <exclude>**/Native*</exclude>
@@ -145,7 +145,7 @@
                     <maven.repo.local>${settings.localRepository}</maven.repo.local>
                     <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                     <project.groupId>io.quarkus.platform</project.groupId>
-                    <project.version>2.7.5.Final-redhat-00006</project.version>
+                    <project.version>2.7.5.Final-redhat-00007</project.version>
                   </systemProperties>
                 </configuration>
               </execution>

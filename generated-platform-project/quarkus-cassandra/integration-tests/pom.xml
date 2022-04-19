@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-cassandra-parent</artifactId>
-    <version>2.7.5.Final-redhat-00006</version>
+    <version>2.7.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-cassandra-integration-tests-parent</artifactId>
@@ -23,9 +23,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus</groupId>
+        <groupId>com.redhat.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

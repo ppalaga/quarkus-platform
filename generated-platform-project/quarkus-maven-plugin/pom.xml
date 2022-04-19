@@ -5,19 +5,19 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>2.7.5.Final-redhat-00006</version>
+    <version>2.7.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>io.quarkus.platform</groupId>
+  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.quarkus.platform</groupId>
+        <groupId>com.redhat.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>2.7.5.Final-redhat-00006</version>
+        <version>2.7.5.Final-redhat-00007</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -33,8 +33,8 @@
       <artifactId>quarkus-core-deployment</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>io.quarkus</groupId>
           <artifactId>quarkus-ide-launcher</artifactId>
+          <groupId>io.quarkus</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -63,12 +63,12 @@
       <artifactId>maven-core</artifactId>
       <exclusions>
         <exclusion>
-          <groupId>com.google.code.findbugs</groupId>
           <artifactId>jsr305</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
         </exclusion>
         <exclusion>
-          <groupId>com.google.guava</groupId>
           <artifactId>listenablefuture</artifactId>
+          <groupId>com.google.guava</groupId>
         </exclusion>
       </exclusions>
     </dependency>

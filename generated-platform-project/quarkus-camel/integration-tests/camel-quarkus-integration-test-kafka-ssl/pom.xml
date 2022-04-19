@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.quarkus.platform</groupId>
+    <groupId>com.redhat.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
-    <version>2.7.5.Final-redhat-00006</version>
+    <version>2.7.5.Final-redhat-00007</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-kafka-ssl</artifactId>
@@ -28,24 +28,24 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>javax.activation</groupId>
           <artifactId>activation</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>javax.activation</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>javax.activation-api</artifactId>
+          <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
-          <groupId>jakarta.activation</groupId>
           <artifactId>jakarta.activation-api</artifactId>
+          <groupId>jakarta.activation</groupId>
         </exclusion>
         <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
           <artifactId>jaxb-osgi</artifactId>
+          <groupId>com.sun.xml.bind</groupId>
         </exclusion>
         <exclusion>
-          <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
+          <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
     </dependency>
