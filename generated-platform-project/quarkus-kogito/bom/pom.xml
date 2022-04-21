@@ -1672,8 +1672,8 @@
         <version>1.17.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>drools-wiring-dynamic</artifactId>
             <groupId>org.drools</groupId>
+            <artifactId>drools-wiring-dynamic</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
