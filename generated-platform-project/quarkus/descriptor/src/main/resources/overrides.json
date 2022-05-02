@@ -9,7 +9,7 @@
         "kotlin-version" : "1.6.10",
         "scala-version" : "2.12.13",
         "scala-plugin-version" : "4.5.6",
-        "quarkus-core-version" : "2.7.5.Final-redhat-00010",
+        "quarkus-core-version" : "2.7.5.Final-redhat-00011",
         "maven-plugin-groupId" : "${project.groupId}",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
         "maven-plugin-version" : "${project.version}",
@@ -21,7 +21,7 @@
         "gradle-wrapper-version" : "7.3.3"
       }
     },
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.7.5.Final-redhat-00010" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.7.5.Final-redhat-00011" ],
     "last-bom-update" : "${member.last-bom-update}"
   },
   "categories" : [ {
