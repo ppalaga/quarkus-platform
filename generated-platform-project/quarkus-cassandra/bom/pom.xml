@@ -65,32 +65,32 @@
       <dependency>
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-client-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-client</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-mapper-processor</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-test-framework</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-core-shaded</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-core</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
         <exclusions>
           <exclusion>
             <groupId>io.dropwizard.metrics</groupId>
@@ -100,32 +100,42 @@
             <groupId>org.hdrhistogram</groupId>
             <artifactId>HdrHistogram</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-mapper-processor</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-mapper-runtime</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-metrics-micrometer</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-metrics-microprofile</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-query-builder</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
@@ -135,12 +145,12 @@
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-test-infra</artifactId>
-        <version>4.13.0</version>
+        <version>4.14.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>native-protocol</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tinkerpop</groupId>
@@ -175,7 +185,7 @@
       <dependency>
         <groupId>org.lz4</groupId>
         <artifactId>lz4-java</artifactId>
-        <version>1.6.0</version>
+        <version>1.7.1.redhat-00003</version>
         <optional>true</optional>
       </dependency>
     </dependencies>

@@ -85,6 +85,9 @@
             <artifact>io.quarkus:quarkus-neo4j</artifact>
             <artifact>io.quarkus:quarkus-vault</artifact>
           </ignoredArtifacts>
+          <metadataOverrideArtifacts>
+            <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:2.7.1.redhat-00010</artifact>
+          </metadataOverrideArtifacts>
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json,${project.basedir}/../../../src/main/resources/core/extensions-support-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>

@@ -12,20 +12,8 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
-    <module>camel-quarkus-integration-test-amqp</module>
-    <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
-    <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
-    <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
-    <module>camel-quarkus-integration-test-csimple</module>
-    <module>camel-quarkus-integration-test-http</module>
-    <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
-    <module>camel-quarkus-integration-test-syslog</module>
-    <module>camel-quarkus-integration-test-telegram</module>
-    <module>camel-quarkus-integration-test-jms-artemis-client</module>
-    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
-    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
-    <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-activemq</module>
+    <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
     <module>camel-quarkus-integration-test-atlasmap</module>
@@ -48,6 +36,7 @@
     <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
     <module>camel-quarkus-integration-test-crypto</module>
+    <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json</module>
@@ -78,10 +67,10 @@
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
+    <module>camel-quarkus-integration-test-http</module>
     <module>camel-quarkus-integration-test-hystrix</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
-    <module>camel-quarkus-integration-test-ipfs</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
     <module>camel-quarkus-integration-test-jaxb</module>
@@ -89,6 +78,8 @@
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jing</module>
     <module>camel-quarkus-integration-test-jira</module>
+    <module>camel-quarkus-integration-test-jms-artemis-client</module>
+    <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
@@ -98,6 +89,7 @@
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
     <module>camel-quarkus-integration-test-jta</module>
+    <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
     <module>camel-quarkus-integration-test-kafka-ssl</module>
@@ -142,7 +134,6 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
-    <module>camel-quarkus-integration-test-platform-http-engine</module>
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>
@@ -159,6 +150,10 @@
     <module>camel-quarkus-integration-test-servicenow</module>
     <module>camel-quarkus-integration-test-servlet</module>
     <module>camel-quarkus-integration-test-shiro</module>
+    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
+    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-slack</module>
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
     <module>camel-quarkus-integration-test-soap</module>
@@ -170,7 +165,9 @@
     <module>camel-quarkus-integration-test-stax</module>
     <module>camel-quarkus-integration-test-stringtemplate</module>
     <module>camel-quarkus-integration-test-syndication</module>
+    <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
+    <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>
