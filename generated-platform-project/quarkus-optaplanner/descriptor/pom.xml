@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.redhat.quarkus.platform</groupId>
+    <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-optaplanner-parent</artifactId>
     <version>2.7.5.Camel-temporary-redhat-00002</version>
     <relativePath>..</relativePath>
@@ -12,12 +12,11 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - OptaPlanner - Quarkus Platform Descriptor</name>
   <properties>
-    <gpg.skip>true</gpg.skip>
     <member.last-bom-update>io.quarkus.platform:quarkus-optaplanner-bom:2.7.2.Final</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.redhat.quarkus.platform</groupId>
+      <groupId>io.quarkus.platform</groupId>
       <artifactId>quarkus-optaplanner-bom</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -30,28 +29,6 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
@@ -78,14 +55,22 @@
         <configuration>
           <bomArtifactId>quarkus-optaplanner-bom</bomArtifactId>
           <quarkusCoreVersion>${quarkus-bom.version}</quarkusCoreVersion>
-          <upstreamQuarkusCoreVersion>2.7.5.Final</upstreamQuarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
             <version>${platform.release}</version>
             <members>
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-kogito-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
           <processGroupIds>

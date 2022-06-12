@@ -8,7 +8,6 @@
     <version>2.7.5.Camel-temporary-redhat-00002</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-debezium-parent</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Debezium-Outbox - Parent</name>
@@ -18,31 +17,4 @@
     <module>descriptor</module>
     <module>properties</module>
   </modules>
-  <properties>
-    <gpg.skip>true</gpg.skip>
-  </properties>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
 </project>

@@ -8,7 +8,6 @@
     <version>2.7.5.Camel-temporary-redhat-00002</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.redhat.quarkus.platform</groupId>
   <artifactId>quarkus-camel-parent</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Parent</name>

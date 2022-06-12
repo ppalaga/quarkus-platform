@@ -27,7 +27,7 @@
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
-    <platform.key>com.redhat.quarkus.platform</platform.key>
+    <platform.key>io.quarkus.platform</platform.key>
     <platform.release>2.7.5.Camel-temporary-redhat-00002</platform.release>
     <platform.stream>2.7</platform.stream>
   </properties>

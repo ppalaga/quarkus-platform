@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.redhat.quarkus.platform</groupId>
+  <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-optaplanner-bom</artifactId>
   <version>2.7.5.Camel-temporary-redhat-00002</version>
   <packaging>pom</packaging>
@@ -44,20 +44,17 @@
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
-  <properties>
-    <gpg.skip>true</gpg.skip>
-  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.redhat.quarkus.platform</groupId>
+        <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-optaplanner-bom-quarkus-platform-descriptor</artifactId>
         <version>2.7.5.Camel-temporary-redhat-00002</version>
         <type>json</type>
         <classifier>2.7.5.Camel-temporary-redhat-00002</classifier>
       </dependency>
       <dependency>
-        <groupId>com.redhat.quarkus.platform</groupId>
+        <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-optaplanner-bom-quarkus-platform-properties</artifactId>
         <version>2.7.5.Camel-temporary-redhat-00002</version>
         <type>properties</type>
@@ -75,7 +72,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.19.redhat-00001</version>
+        <version>1.4.19</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -1186,30 +1183,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
   <profiles>
     <profile>
       <id>release</id>
