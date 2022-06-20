@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>2.7.6.Final-redhat-00002</version>
+    <version>2.7.6.Final-redhat-00003</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -57,8 +57,11 @@
 
         <quarkus.version>2.7.6.Final</quarkus.version>
         <quarkus-bom.version>2.7.6.Final-redhat-00002</quarkus-bom.version>
+        <hibernate.version>5.6.5.Final-redhat-00001</hibernate.version><!-- keep in sync with quarkus-bom.version -->
+        <hibernate-search.version>6.1.5.Final-redhat-00001</hibernate-search.version><!-- keep in sync with quarkus-bom.version -->
 
         <camel-quarkus.version>2.7.1</camel-quarkus.version>
+        <camel-quarkus-tests.version>${camel-quarkus.version}</camel-quarkus-tests.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
              make sure you have a look at the AmazonServices member section below
@@ -70,7 +73,8 @@
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.8.1.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.6</quarkus-blaze-persistence.version>
-        <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client.version>1.1.2.redhat-00004</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client-tests.version>1.1.2</quarkus-cassandra-client-tests.version>
 
         <kogito-quarkus.version>1.17.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.17.0.Final</optaplanner-quarkus.version>
@@ -78,6 +82,7 @@
         <quarkus-google-cloud-services.version>1.0.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.0.2</quarkus-vault.version>
 
+        <cq-maven-plugin.version>2.32.0</cq-maven-plugin.version>
         <quarkus-platform-bom-generator.version>0.0.48</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
@@ -147,6 +152,11 @@
                     <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
                     <version>${quarkus-platform-bom-generator.version}</version>
                 </plugin>
+                <plugin><!-- Remove once https://issues.redhat.com/browse/QUARKUS-2207 is fixed -->
+                    <groupId>org.l2x6.cq</groupId>
+                    <artifactId>cq-prod-maven-plugin</artifactId>
+                    <version>${cq-maven-plugin.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -158,7 +168,7 @@
                 <executions>
                     <execution>
                         <id>generate-platform-project</id>
-                        <phase>process-resources</phase>
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>generate-platform-project</goal>
                         </goals>
@@ -204,6 +214,47 @@
                                 <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
                                 <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
                                 <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1974 -->
+                                    <artifact>com.github.java-json-tools:jackson-coreutils:2.0.0.redhat-00005</artifact>
+                                    <exclusions>
+                                        <exclusion>com.google.code.findbugs:jsr305</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1974 -->
+                                    <artifact>com.github.java-json-tools:json-patch:1.13.0.redhat-00006</artifact>
+                                    <exclusions>
+                                        <exclusion>com.google.code.findbugs:jsr305</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1974 -->
+                                    <artifact>com.github.java-json-tools:msg-simple:1.2.0.redhat-00001</artifact>
+                                    <exclusions>
+                                        <exclusion>com.google.code.findbugs:jsr305</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
+                                <dependency>io.quarkus:quarkus-smallrye-reactive-messaging-amqp-deployment:${quarkus-bom.version}</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2212 -->
+                                <dependency>io.quarkus:quarkus-smallrye-reactive-messaging-mqtt-deployment:${quarkus.version}</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2212 -->
+                                <dependency>io.quarkus:quarkus-smallrye-reactive-messaging-rabbitmq-deployment:${quarkus.version}</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2212 -->
+                                <dependency>com.squareup.okio:okio:1.17.2.redhat-00002</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2213 -->
+                                <dependency>org.javassist:javassist:3.27.0.GA-redhat-00001</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2214 -->
+                                <dependency>org.lz4:lz4-java:1.8.0.redhat-00001</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1768 -->
+                                <dependency>com.google.api.grpc:proto-google-common-protos:2.0.1.redhat-00002</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2215 -->
+                                <dependency>org.hdrhistogram:HdrHistogram:2.1.12.redhat-00001</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2216 -->
+                                <dependency>com.sun.mail:jakarta.mail:1.6.7.redhat-00001</dependency><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2218 -->
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1913 -->
+                                    <artifact>org.hibernate:hibernate-core:${hibernate.version}</artifact>
+                                    <exclusions>
+                                        <exclusion>javax.persistence:javax.persistence-api</exclusion>
+                                        <exclusion>javax.xml.bind:jaxb-api</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-1913 -->
+                                    <artifact>org.hibernate.search:hibernate-search-mapper-orm-coordination-outbox-polling:${hibernate-search.version}</artifact>
+                                    <exclusions>
+                                        <exclusion>javax.persistence:javax.persistence-api</exclusion>
+                                        <exclusion>javax.xml.bind:jaxb-api</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
                             </dependencyManagement>
                             <extensionGroupIds>
                                 <groupId>io.quarkus</groupId>
@@ -323,6 +374,14 @@
                             <member>
                                 <name>QpidJMS</name>
                                 <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>
+                                <dependencyManagement>
+                                    <dependencySpec><!-- https://issues.apache.org/jira/browse/QPIDJMS-566, remove once qpid-jms-client:1.6.0 reaches us -->
+                                        <artifact>org.amqphub.quarkus:quarkus-qpid-jms:${quarkus-qpid-jms.version}</artifact>
+                                        <exclusions>
+                                            <exclusion>org.apache.geronimo.specs:geronimo-jms_2.0_spec</exclusion>
+                                        </exclusions>
+                                    </dependencySpec>
+                                </dependencyManagement>
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:2.7.0.Final</lastDetectedBomUpdate>
@@ -354,16 +413,16 @@
                                 </defaultTestConfig>
                                 <tests>
                                     <test>
-                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client.version}</artifact>
+                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client-tests.version}</artifact>
                                     </test>
                                     <test>
-                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client.version}</artifact>
+                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client-tests.version}</artifact>
                                     </test>
                                     <test>
-                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client.version}</artifact>
+                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client-tests.version}</artifact>
                                     </test>
                                     <test>
-                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client.version}</artifact>
+                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client-tests.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
@@ -419,72 +478,6 @@
                                     <transformWith>${resourcesdir}/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
-                                <tests>
-                                    <test><!-- Workaround for amqp tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-amqp:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for csimple tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for http tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Syslog tests failing  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-syslog:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Telegram tests failing with Quarkus 999-SNAPSHOT and CQ 2.5.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-telegram:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <!--
-                                        Artemis issue
-                                    -->
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <!-- Workaround for Cassandraql and fhir tests failing with Quarkus 999-SNAPSHOT and CQ 2.7.1  -->
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-fhir:${camel-quarkus.version}</artifact>
-                                    </test>
-                                </tests>
                             </member>
                             <member>
                                 <name>Hazelcast</name>
@@ -772,6 +765,9 @@
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
+                <camel-quarkus.version>2.7.1.redhat-00016</camel-quarkus.version>
+                <camel-quarkus-community.version>2.7.1</camel-quarkus-community.version>
+                <camel-quarkus-tests.version>${camel-quarkus-community.version}</camel-quarkus-tests.version>
             </properties>
             <build>
                 <plugins>
@@ -812,12 +808,10 @@
                                     </member>
                                     <member>
                                         <name>Camel</name>
-                                        <hidden>true</hidden>
-                                        <!-- uncomment when the artifact is available
+                                        <hidden>false</hidden>
                                         <metadataOverrideArtifacts>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
                                         </metadataOverrideArtifacts>
-                                        -->
                                     </member>
                                     <member>
                                         <name>Hazelcast</name>
@@ -844,6 +838,29 @@
                                     </versionConstraintPreferences>
                                 </bomGenerator>
                             </platformConfig>
+                        </configuration>
+                    </plugin>
+                    <plugin><!-- Remove once https://issues.redhat.com/browse/QUARKUS-2207 is fixed -->
+                        <groupId>org.l2x6.cq</groupId>
+                        <artifactId>cq-prod-maven-plugin</artifactId>
+                        <version>${cq-maven-plugin.version}</version>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>reduce-generated-platform-boms</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>reduce-generated-platform-boms</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <members>
+                                <member>
+                                    <name>Camel</name>
+                                    <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
+                                </member>
+                            </members>
                         </configuration>
                     </plugin>
                 </plugins>
