@@ -255,6 +255,14 @@
                                         <exclusion>javax.xml.bind:jaxb-api</exclusion>
                                     </exclusions>
                                 </dependencySpec>
+                                <dependencySpec><!-- Workaround for https://issues.redhat.com/browse/QUARKUS-2053 -->
+                                    <artifact>io.jaegertracing:jaeger-thrift:1.8.0.redhat-00001</artifact>
+                                    <exclusions>
+                                        <exclusion>org.apache.tomcat.embed:tomcat-embed-core</exclusion>
+                                        <exclusion>org.apache.tomcat:tomcat-annotations-api</exclusion>
+                                        <exclusion>javax.annotation:javax.annotation-api</exclusion>
+                                    </exclusions>
+                                </dependencySpec>
                             </dependencyManagement>
                             <extensionGroupIds>
                                 <groupId>io.quarkus</groupId>
