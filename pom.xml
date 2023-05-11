@@ -66,6 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.0.1</quarkus-amazon-services.version>
+        <quarkus-cxf.version>2.0.3</quarkus-cxf.version>
         <quarkus-config-consul.version>2.0.1</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.1.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -351,6 +352,24 @@
                                     <tests>
                                         <test>
                                             <artifact>io.quarkiverse.amazonservices:quarkus-amazon-services-integration-tests:${quarkus-amazon-services.version}</artifact>
+                                        </test>
+                                    </tests>
+                                </member>
+                                <member>
+                                    <name>CXF</name>
+                                    <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <skip>false</skip>
+                                    </defaultTestConfig>
+                                    <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
+                                    <tests>
+                                        <test>
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-server:${quarkus-cxf.version}</artifact>
+                                            <!-- Disabled due to https://github.com/quarkusio/quarkus/issues/33305 -->
+                                            <testPattern>!*IT,!Java2wsTest</testPattern>
                                         </test>
                                     </tests>
                                 </member>
