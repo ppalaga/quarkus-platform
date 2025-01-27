@@ -384,22 +384,6 @@
                                             <nativeExcludes>**/RedirectTest*</nativeExcludes>
                                             <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:${quarkus-cxf.version}</artifact>
                                         </test>
-                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client:${quarkus-cxf.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
-                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${quarkus-cxf.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
-                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security:${quarkus-cxf.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
-                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-trust:${quarkus-cxf.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
                                     </tests>
                                 </member>
                                 <member>
@@ -413,6 +397,15 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.18.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
+                                    <dependencyManagement>
+                                        <dependencySpec><!-- Workaround for https://github.com/apache/camel-quarkus/issues/6940 -->
+                                          <artifact>org.apache.wss4j:wss4j-ws-security-common:3.0.4</artifact>
+                                          <exclusions>
+                                            <exclusion>io.dropwizard.metrics:metrics-core</exclusion>
+                                            <exclusion>org.bouncycastle:*</exclusion>
+                                          </exclusions>
+                                        </dependencySpec>
+                                    </dependencyManagement>
                                     <defaultTestConfig>
                                         <skip>false</skip>
                                         <transformWith>${resourcesdir}/xslt/camel-test-pom.xsl</transformWith>
@@ -449,10 +442,6 @@
                                         </test>
                                         <test><!-- SSL cert issues: https://github.com/apache/camel-quarkus/issues/6709 -->
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec:${camel-quarkus-test-list.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
-                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
                                             <excluded>true</excluded>
                                         </test>
                                         <test><!-- Resouce path issues in SshTestResource: https://github.com/apache/camel-quarkus/issues/6941 -->
