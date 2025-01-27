@@ -58,7 +58,7 @@
         <quarkus.version>3.18.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.17.0</camel-quarkus.version>
+        <camel-quarkus.version>3.18.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -384,6 +384,22 @@
                                             <nativeExcludes>**/RedirectTest*</nativeExcludes>
                                             <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:${quarkus-cxf.version}</artifact>
                                         </test>
+                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client:${quarkus-cxf.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
+                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${quarkus-cxf.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
+                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security:${quarkus-cxf.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
+                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-trust:${quarkus-cxf.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>
@@ -433,6 +449,14 @@
                                         </test>
                                         <test><!-- SSL cert issues: https://github.com/apache/camel-quarkus/issues/6709 -->
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec:${camel-quarkus-test-list.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
+                                        <test><!-- BouncyCastle issues: https://github.com/apache/camel-quarkus/issues/6940 -->
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
+                                            <excluded>true</excluded>
+                                        </test>
+                                        <test><!-- Resouce path issues in SshTestResource: https://github.com/apache/camel-quarkus/issues/6941 -->
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ssh:${camel-quarkus-test-list.version}</artifact>
                                             <excluded>true</excluded>
                                         </test>
                                     </tests>

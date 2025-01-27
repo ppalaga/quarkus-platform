@@ -2,24 +2,29 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
+    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-ws-rm-client</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-rm-client</name>
+  <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jms-artemis-jms-ra</name>
   <dependencies>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-rm-client</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-rm-client</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -50,32 +55,23 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-activemq</artifactId>
+      <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-messaging-common</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-test-ws-rm-server-jvm</artifactId>
-      <version>${quarkus-cxf.version}</version>
-      <type>pom</type>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.27.3</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-messaging-jms</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -107,54 +103,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra</dependency>
           </dependenciesToScan>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.gmaven</groupId>
-        <artifactId>groovy-maven-plugin</artifactId>
-        <version>2.1.1</version>
-        <executions>
-          <execution>
-            <id>ensure-quarkus-cxf-test-ws-rm-server-downloaded</id>
-            <goals>
-              <goal>execute</goal>
-            </goals>
-            <phase>validate</phase>
-            <configuration>
-              <source>
-                                    println 'Downloaded quarkus-cxf-test-ws-rm-server-jvm and quarkus-cxf-test-ws-rm-server-native'
-                                </source>
-            </configuration>
-          </execution>
-        </executions>
-        <dependencies>
-          <dependency>
-            <groupId>io.quarkiverse.cxf</groupId>
-            <artifactId>quarkus-cxf-test-ws-rm-server-jvm</artifactId>
-            <classifier>runner</classifier>
-            <version>${quarkus-cxf.version}</version>
-            <exclusions>
-              <exclusion>
-                <groupId>*</groupId>
-                <artifactId>*</artifactId>
-              </exclusion>
-            </exclusions>
-          </dependency>
-          <dependency>
-            <groupId>io.quarkiverse.cxf</groupId>
-            <artifactId>quarkus-cxf-test-ws-rm-server-native</artifactId>
-            <type>exe</type>
-            <version>${quarkus-cxf.version}</version>
-            <exclusions>
-              <exclusion>
-                <groupId>*</groupId>
-                <artifactId>*</artifactId>
-              </exclusion>
-            </exclusions>
-          </dependency>
-        </dependencies>
       </plugin>
     </plugins>
   </build>
@@ -185,7 +136,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -200,7 +151,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

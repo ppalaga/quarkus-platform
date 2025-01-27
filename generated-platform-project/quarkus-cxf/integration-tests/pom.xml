@@ -23,10 +23,6 @@
     <module>quarkus-cxf-integration-test-saaj</module>
     <module>quarkus-cxf-integration-test-santuario-xmlsec</module>
     <module>quarkus-cxf-integration-test-server</module>
-    <module>quarkus-cxf-integration-test-ws-rm-client</module>
-    <module>quarkus-cxf-integration-test-ws-security-policy</module>
-    <module>quarkus-cxf-integration-test-ws-security</module>
-    <module>quarkus-cxf-integration-test-ws-trust</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
