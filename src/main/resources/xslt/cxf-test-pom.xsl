@@ -18,6 +18,7 @@
             <xsl:apply-templates select="@* | node()" />
             <systemPropertyVariables>
                 <quarkus.plugin.group-id>io.quarkus</quarkus.plugin.group-id>
+                <quarkus.plugin.version>${quarkus.version}</quarkus.plugin.version>
                 <quarkus.platform.group-id>${project.groupId}</quarkus.platform.group-id>
                 <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
                 <quarkus.platform.version>${project.version}</quarkus.platform.version>
@@ -31,6 +32,7 @@
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" />
             <quarkus.plugin.group-id>io.quarkus</quarkus.plugin.group-id>
+            <quarkus.plugin.version>${quarkus.version}</quarkus.plugin.version>
             <quarkus.platform.group-id>${project.groupId}</quarkus.platform.group-id>
             <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
             <quarkus.platform.version>${project.version}</quarkus.platform.version>

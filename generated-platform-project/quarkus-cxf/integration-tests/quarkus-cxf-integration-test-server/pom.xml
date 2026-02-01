@@ -110,6 +110,7 @@
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.plugin.group-id>io.quarkus</quarkus.plugin.group-id>
+            <quarkus.plugin.version>${quarkus.version}</quarkus.plugin.version>
             <quarkus.platform.group-id>${project.groupId}</quarkus.platform.group-id>
             <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
             <quarkus.platform.version>${project.version}</quarkus.platform.version>
@@ -143,6 +144,7 @@
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                     <quarkus.plugin.group-id>io.quarkus</quarkus.plugin.group-id>
+                    <quarkus.plugin.version>${quarkus.version}</quarkus.plugin.version>
                     <quarkus.platform.group-id>${project.groupId}</quarkus.platform.group-id>
                     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
                     <quarkus.platform.version>${project.version}</quarkus.platform.version>
